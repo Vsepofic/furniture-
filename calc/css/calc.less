@@ -1,0 +1,167 @@
+.calc {
+  & form {
+    & .calcRow1 {
+      & .heading {
+      }
+      & .calcSection {
+        & .checkboxWrapper {
+          display: flex;
+          align-items: center;
+          & .titleInline {
+            display: inline-block;
+            & .inputShort {
+              width: 20px;
+            }
+          }
+          & .inputShort {
+            width: 50px;
+            height: 36px;
+            border-radius: 4px;
+            border: 1px solid #333333;
+            font-size: 20px;
+            font-weight: 600;
+            // color: rgb(24, 165, 235);
+            color: rgb(0, 120, 250);
+            text-align: center;
+          }
+          & .titleInline + .titleInline {
+            margin-left: 10px;
+          }
+        }
+        & .rangeInput {
+          width: 100%;
+        }
+        & .sectionTitle {
+        }
+        & .sectionTitle-verticalCenter {
+        }
+        & .titleBold {
+        }
+      }
+      & .calcSection:nth-child(odd) {
+        // padding: 40px 50px;
+        // background-color: #fff;
+      }
+    }
+    & .calcRow2 {
+      & .calcCol2 {
+        & .calcSection {
+          & .checkboxWrapper {
+            display: flex;
+            align-items: center;
+          }
+          & .radioWrapper {
+            display: flex;
+            & .radio {
+              margin-right: 15px;
+              margin-top: 6px;
+            }
+            & .titleLite {
+              font-size: 20px;
+              font-weight: 300;
+              & .note {
+                display: block;
+                font-style: italic;
+                color: #969696;
+              }
+            }
+          }
+          & .sectionTitle {
+          }
+          & .sectionTitle-verticalCenter {
+          }
+          & .titleBold {
+          }
+          & .roomsWrapper {
+            display: flex;
+            flex-direction: start;
+            align-items: center;
+            & .roomsLabel {
+              & .roomsRadioReal {
+                opacity: 0;
+                appearance: none;
+                height: 0;
+                width: 0;
+                margin: 0;
+              }
+              & .roomsRadioReal:checked + .roomsRadioFake {
+                background-color: rgb(0, 120, 250);
+                color: white;
+              }
+              & .roomsRadioFake {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                background-color: #cacaca;
+                line-height: 50px;
+                font-size: 20px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        & .calcSection:nth-child(odd) {
+        }
+      }
+    }
+    & .calcRow3 {
+      & .calcCol3 {
+        & .calcSection {
+          & .checkboxWrapper {
+            display: flex;
+            align-items: center;
+          }
+          & .radioWrapper {
+            display: flex;
+            & .radio {
+              margin-right: 15px;
+              margin-top: 6px;
+            }
+            & .titleLite {
+              font-size: 20px;
+              font-weight: 300;
+              & .note {
+                display: block;
+                font-style: italic;
+                color: #969696;
+              }
+            }
+          }
+          & .radioWrapper:not(:last-child) {
+          }
+          & .titleBold {
+          }
+          & .roomsWrapper {
+            display: flex;
+            flex-direction: start;
+            align-items: center;
+          }
+        }
+        & .calcSection:nth-child(odd) {
+        }
+      }
+    }
+    & .calcRow4 {
+      & .calcPrice {
+        & .calcPriceTitle {
+        }
+        & .calcPriceValue {
+        }
+      }
+      & .discount {
+        & .discountTitle {
+        }
+        & .discountValue {
+        }
+      }
+      & .discountPrice {
+        & .discountPriceTitle {
+        }
+        & .discountPriceValue {
+        }
+      }
+    }
+  }
+}

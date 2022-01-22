@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>фурнитура - мебель для вас</title>
+  <link rel="icon" href="../img/furnitureIcons/favicon-32x32.png" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/furniture.css">
+  <link rel="stylesheet" href="css/contacts.css">
+</head>
+
+<body>
+  <div id="theme" class="container-fluid bgLight">
+    <div class="wrapper">
+
+      <div class="menuNavbar sticky-top mb-1 mb-md-3 px-0 pb-2 textN">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="navbarBox container-fluid">
+            <a class="navbar-brand text-uppercase" href="../index.html">furniture</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-uppercase langNavLink" href="#" id="navbarDropdown1" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Kаталог мебели
+                  </a>
+                  <ul class="dropdown-menu ulDark" aria-labelledby="navbarDropdown1">
+                    <li><a class="dropdown-item langKitchens" href="../kitchen/kitchen.html" target="_blanc">Кухни</a></li>
+                    <li><a class="dropdown-item langWardrobes" href="#" target="_blanc">Шкафы-купе</a></li>
+                    <li><a class="dropdown-item langBathroom" href="#" target="_blanc">Мебель для ванной</a></li>
+                    <li><a class="dropdown-item langHallways" href="#" target="_blanc">Прихожие</a></li>
+                    <li><a class="dropdown-item langChildren" href="#" target="_blanc">Детская мебель</a></li>
+                    <li><a class="dropdown-item langShelving" href="#" target="_blanc">Гардеробные / стеллажные</a></li>
+                    <li><a class="dropdown-item langLiving" href="#" target="_blanc">Мебель для гостиной</a></li>
+                    <li><a class="dropdown-item langShelves" href="#" target="_blanc">Полки / Ниши</a></li>
+                    <li><a class="dropdown-item langCabinets" href="#" target="_blanc">Кабинеты и Библиотеки</a></li>
+                    <li><a class="dropdown-item langInterior" href="#" target="_blanc">Межкомнатные перегородки</a></li>
+                    <li><a class="dropdown-item langBedroom" href="#" target="_blanc">Мебель для спальной</a></li>
+                    <li><a class="dropdown-item langSolid" href="#" target="_blanc">Мебель из массива</a></li>
+                    <li><a class="dropdown-item langOffice" href="#" target="_blanc">Офисная мебель</a></li>
+                    <li><a class="dropdown-item langSoft" href="#" target="_blanc">Мебель с мягкими декорами</a></li>
+                    <li><a class="dropdown-item langLoft" href="#" target="_blanc">Мебель Лофт</a></li>
+                    <li><a class="dropdown-item langFolding" href="#" target="_blanc">Системы складных дверей</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-uppercase langAbout" href="#" id="navbarDropdown2" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    О НАС
+                  </a>
+                  <ul class="dropdown-menu ulDark" aria-labelledby="navbarDropdown2">
+                    <li><a class="dropdown-item text-uppercase langAbout2" href="#" target="_blanc">О НАС</a></li>
+                    <li><a class="dropdown-item text-uppercase langGuarantee" href="#" target="_blanc">ГАРАНТИЯ</a></li>
+                    <li><a class="dropdown-item text-uppercase langFavorites" href="#" target="_blanc">ИЗБРАННОЕ</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-uppercase langDesigners" href="../designers/designer.html"
+                        target="_blanc">ДИЗАЙНЕРЫ</a>
+                    </li>
+                    <li class="nav-item dropdown2">
+                      <a class="disabled dropdown-item text-uppercase langWorks" role="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown2" href="#">
+                        РАБОТЫ НАШИХ ДИЗАЙНЕРОВ
+                      </a>
+                      <ul class="dropdown-menu2 ulDark" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item2 text-dark langStyleLoft" href="../portfolio/portfolio-loft.html"
+                            target="_blanc">Стиль ЛОФТ</a></li>
+                        <li><a class="dropdown-item2 text-dark langStyleProv" href="../portfolio/portfolio-prov.html"
+                            target="_blanc">Стиль ПРОВАНС</a></li>
+                        <li><a class="dropdown-item2 text-dark langStyleClass" href="../portfolio/portfolio-class.html"
+                            target="_blanc">Стиль КЛАССИКА</a>
+                        </li>
+                        <li><a class="dropdown-item2 text-dark langStyleMini" href="../portfolio/portfolio-mini.html"
+                            target="_blanc">Стиль МИНИМАЛИЗМ</a>
+                        </li>
+                        <li><a class="dropdown-item2 text-dark langStyleEtno" href="../portfolio/portfolio-etno.html"
+                            target="_blanc">Стиль ЭТНО</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-uppercase langHealthy" href="#" id="navbarDropdown3" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    ПОЛЕЗНО
+                  </a>
+                  <ul class="dropdown-menu ulDark" aria-labelledby="navbarDropdown3">
+                    <li><a class="dropdown-item text-uppercase langConsultation" href="../error/404.html"
+                        target="_blanc">КОНСУЛЬТАЦИЯ</a></li>
+                    <li><a class="dropdown-item text-uppercase langDelivery" href="../delivery/delivery.html"
+                        target="_blanc">ДОСТАВКА</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li class="nav-item dropdown2">
+                      <a class="disabled dropdown-item text-uppercase langMaterials" role="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown2" href="#">
+                        МАТЕРИАЛЫ
+                      </a>
+                      <ul class="dropdown-menu2 ulDark" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item2 text-dark langChipboard" href="#">ДСП</a></li>
+                        <li><a class="dropdown-item2 text-dark langTree" href="#">Дерево</a></li>
+                        <li><a class="dropdown-item2 text-dark langGlass" href="#">Стекло</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-uppercase langCalculators" href="../calc/calc.html"
+                        target="_blanc">КАЛЬКУЛЯТОРЫ</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase langContacts" aria-current="page" href="../contacts/contacts.html"
+                    target="_blanc">КОНТАКТЫ</a>
+                </li>
+              </ul>
+      
+              <ul class="navbar-nav navbarTheme">
+                <li id="themeBtn1" class="nav-item me-2 mb-2 mb-lg-0">
+                  <a id="but1" class="nav-link"><img src="../img/furnitureIcons/2.2-min.png" alt=""></a>
+                </li>
+                <li id="themeBtn2" class="nav-item d-none mb-3 mb-lg-0">
+                  <a id="but2" class="nav-link"><img src="../img/furnitureIcons/1.2-min.png" alt=""></a>
+                </li>
+                <li class="nav-item me-2 mb-3 mb-lg-0 p-2">
+                  <select class="btn shadow btn-outline-secondary changeLang textN" aria-label="">
+                    <option value="ru" class="" selected>RU</option>
+                    <option value="en">EN</option>
+                    <option value="ua">UA</option>
+                  </select>
+                </li>
+              </ul>
+      
+              <form class="d-flex navForm">
+                <input id="elastic" class="form-control" type="search" autocomplete="off" aria-label="Search"
+                  placeholder="Поиск по сайту">
+                <div class="navElastic bg-light">
+      
+                  <div class="elastic elasticHome">
+                    <a href="#theme">
+                      <p class="hide">Контакты</p>
+                    </a>
+                    <a href="#contactMaps">
+                      <p class="hide">Мы на карте</p>
+                    </a>
+                  </div>
+      
+                  <div class="elastic elasticLink">
+                    <a href="../furniture.html" target="blank">
+                      <p class="hide">Главная</p>
+                    </a>
+                    <a href="../kitchen/kitchen.html" target="blank">
+                      <p class="hide">Кухни</p>
+                    </a>
+                    <a href="../kitchen-corner/kitchen-corner.html" target="blank">
+                      <p class="hide">Угловые кухни</p>
+                    </a>
+                    <a href="../designers/designer.html" target="blank">
+                      <p class="hide">Дизайнеры</p>
+                    </a>
+                    <a href="../portfolio/portfolio-loft.html" target="blank">
+                      <p class="hide">Стиль Лофт</p>
+                    </a>
+                    <a href="../portfolio/portfolio-prov.html" target="blank">
+                      <p class="hide">Стиль Прованс</p>
+                    </a>
+                    <a href="../portfolio/portfolio-class.html" target="blank">
+                      <p class="hide">Стиль Классика</p>
+                    </a>
+                    <a href="../portfolio/portfolio-mini.html" target="blank">
+                      <p class="hide">Стиль Минимализм</p>
+                    </a>
+                    <a href="../portfolio/portfolio-etno.html" target="blank">
+                      <p class="hide">Стиль Этно</p>
+                    </a>
+                    <a href="contacts.html" target="blank">
+                      <p class="hide">Контакты</p>
+                    </a>
+                    <a href="../delivery/delivery.html" target="blank">
+                      <p class="hide">Доставка</p>
+                    </a>
+                    <a href="../calc/calc.html" target="blank">
+                      <p class="hide">Калькуляторы</p>
+                    </a>
+                  </div>
+                </div>
+              </form>
+      
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+      <div class="topContact mb-1 mb-md-3 px-0 textN">
+        <header class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 ps-2 animBox animScroll topContactRow">
+          <div class="col d-none d-md-block topContactBrand d-flex justify-content-start align-items-center my-2 py-3">
+            <div class="topContactImg logoImg1"><img src="../img/furnitureIcons/лого1.1-min.png" alt=""></div>
+            <div class="topContactImg logoImg2 d-none"><img src="../img/furnitureIcons/лого2.2-min.png" alt=""></div>
+          </div>
+          <div class="col d-none d-md-block topContactInfo my-2 py-1 border-end-0 langTopText1">С 2012 года производим мебель
+            по индивидуальным размерам</div>
+          <div class="col topContactInfo my-2 py-1 border-end-0">
+            <div class="topContactAd langTopText2">Шоу-рум:</div>
+            <div class="topContactAd langTopText3">г. Краматорск ул. Дружбы</div>
+          </div>
+          <div class="col d-none d-sm-block topContactInfo my-2 py-1 border-end-0">
+            <div class="topContactSch langTopText4">График работы:</div>
+            <div class="topContactSch langTopText5">ПН-ПТ с 10:00 до 19:00 СБ-ВС с 10:00 до 18:00</div>
+          </div>
+          <div class="col d-none topContactInfo d-md-flex justify-content-evenly align-items-center my-2 py-1 border-end-0">
+            <div class="topContactIcon">
+              <a href="https://t.me/+TPjmRNJeN01Yq-J5" target="_blanc"><img src="../img/furnitureIcons/telegram-min.png"
+                  alt=""></a>
+            </div>
+            <div class="topContactIcon">
+              <a href="https://invite.viber.com/?g2=AQBauKhAUBjwjk5ceKozd6Oj7Ild3mvCKwFPePbzWVkp50yNMnEP5RLAGNVAMGTb"
+                target="_blanc"><img src="../img/furnitureIcons/viber-min.png" alt=""></a>
+            </div>
+            <div class="topContactIcon">
+              <a href="https://chat.whatsapp.com/G8S2S429ERRFabztdBigpL" target="_blanc"><img
+                  src="../img/furnitureIcons/whatsapp-min.png" alt=""></a>
+            </div>
+          </div>
+          <div class="col text-lg-end topContactInfo my-2 py-1 border-end-0">
+            <div class="infoCol pb-1 d-flex justify-content-end align-items-center">
+              <div class="specImg"><img src="../img/furnitureIcons/telephone-call-min.png" class="shadow rounded-circle"
+                  alt="">
+              </div>
+              <div class="topLink"><a href="tel:+380997778899"><span class="spanLink text-dark">8 (343) 2 868 395</span></a>
+              </div>
+            </div>
+            <div class="infoCol d-flex justify-content-end align-items-center">
+              <div class="specImg"><img src="../img/furnitureIcons/telephone-call-min.png" class="shadow rounded-circle"
+                  alt="">
+              </div>
+              <div class="topLink"><a href="tel:+380997778899"><span class="spanLink text-dark">8 (343) 2 868 395</span></a>
+              </div>
+            </div>
+          </div>
+      
+        </header>
+      </div>
+      
+      <div class="bread mb-3 mb-md-5 pb-2 textN">
+        <nav aria-label="breadcrumb" class="animBox animScroll">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item breadLi"><a href="../index.html" class="text-dark">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+          </ol>
+        </nav>
+      </div>
+      
+      <div class="contacts mb-3 mb-md-5 pb-2 textN">
+        <div class="title animScroll pb-3 pb-md-5 textT">контакты</div>
+        <div class="contactsRow row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="contactsCol col border-end-0 animBlock animScroll">
+            <div class="contactsImg d-flex align-items-center pb-2">
+              <div class="contImg"><img src="../img/furnitureIcons/telephone-call-min.png" alt=""></div>
+              <div class="contText textB"><a href="tel:+380997778899"><span class="text-dark">8 (343) 2 868 395</span></a>
+              </div>
+            </div>
+            <div class="contactsImg d-flex align-items-center pb-2">
+              <div class="contImg"><img src="../img/furnitureIcons/telephone-call-min.png" alt=""></div>
+              <div class="contText textB"><a href="tel:+380997778899"><span class="text-dark">8 (343) 2 868 395</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="contactsCol col border-end-0 animBlock animScroll">
+            <div class="contactsImg d-flex align-items-center pb-2">
+              <div class="contImg"><img src="../img/furnitureIcons/whatsapp-min.png" alt=""></div>
+              <div class="contText textB"><a href="#"><span class="text-dark">Написать в WhatsApp</span></a></div>
+            </div>
+            <div class="contactsImg d-flex align-items-center pb-2">
+              <div class="contImg"><img src="../img/furnitureIcons/telegram-min.png" alt=""></div>
+              <div class="contText textB"><a href="#"><span class="text-dark">Написать в Telegram</span></a></div>
+            </div>
+          </div>
+          <div class="contactsCol col border-end-0 animBlock animScroll">
+            <div class="contactsImg d-flex align-items-center pb-2">
+              <div class="contImg"><img src="../img/furnitureIcons/viber-min.png" alt=""></div>
+              <div class="contText textB"><a href="#"><span class="text-dark">Написать в Viber</span></a></div>
+            </div>
+            <div class="contactsImg d-flex align-items-center pb-2">
+              <div class="contImg"><img src="../img/furnitureIcons/email-min.png" alt=""></div>
+              <div class="contText textB"><a class="email-link" href="mailto:furniture@gmail.com"><span
+                    class="text-dark">Написать на почту</span></a></div>
+            </div>
+          </div>
+          <div class="contactsCol col border-end-0 animBlock animScroll">
+            <!-- <div class="but">
+              <button type="button" class="btn btn-outline-dark textN" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo">НАПИСАТЬ ДИРЕКТОРУ</button>
+            </div> -->
+
+            <div class="contents contentsLight but card-body text-start">
+              <p class="btn"><a class="textN" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo">НАПИСАТЬ ДИРЕКТОРУ</a></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="modalMeasures">
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title textT" id="exampleModalLabel">НАПИСАТЬ ДИРЕКТОРУ</h5>
+                  <button type="button" class="btn-close btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label"></label>
+                      <input type="text" class="form-control" id="recipient-name" placeholder="Введите имя">
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label"></label>
+                      <input type="phone" class="form-control" id="recipient-name" placeholder="+7 (999) 999 99 99">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label"></label>
+                      <textarea class="form-control" id="message-text" placeholder="Ваше сообщение."></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-outline-dark textN" data-bs-dismiss="modal">Закрыть</button> -->
+                  <button type="button" class="btn btn-outline-dark textN" data-bs-target="#exampleModalToggle2"
+                    data-bs-toggle="modal" data-bs-dismiss="modal">ОТПРАВИТЬ</button>
+                  <p>Нажимая кнопку «Отправить», вы автоматически соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title textT" id="exampleModalToggleLabel2">Успешно!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Мы получили контакты и свяжемся с вами в ближайшее время. Спасибо за сотрудничество!
+                </div>
+                <div class="modal-footer">
+                  <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Back to first</button> -->
+                  <button type="button" class="btn btn-outline-dark textN" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      
+      <div class="detailsOrg mb-3 mb-md-5 pb-2 textN">
+        <div class="title animScroll pb-3 pb-md-5 textT">Реквизиты организации</div>
+        <div class="orgInfo ps-3 border-end-0 animBox animScroll">
+          <div>ООО «ФУРНИТУРА»</div>
+          <div>ИНН 668518719</div>
+          <div>КПП 66850100</div>
+          <div>ОГРН 1216600030316</div>
+          <div>ТОЧКА ПАО БАНКА «ФК ОТКРЫТИЕ»</div>
+          <div>Р/с 40702810102500100006</div>
+          <div>БИК 044525999</div>
+          <div>К/с 30101810845250000999</div>
+          <div>Адрес юридический: 620089, г.Краматорск, ул. Белинского, 169Б</div>
+          <div>Адрес фактический: 620089, г. Краматорск, ул. Белинского, 169Б</div>
+          <div>Директор: Фурнитуров Александр Иванович, действует на основании Устава</div>
+        </div>
+      </div>
+      
+      <div id="contactMaps" class="contactMaps mb-3 mb-md-5 px-0 pb-2 textN">
+        <div class="row row-cols-1 row-cols-lg-2 contactMapsRow animBox animScroll">
+          <div class="col bg-dark text-light contactCol">
+            <div class="contactBox mx-auto">
+              <div class="title text-light my-2 my-sm-1 my-md-5 py-2 py-sm-4 py-md-0 textT">ПОСЕТИТЕ НАШ ШОУ-РУМ</div>
+              <div class="row row-cols-1 row-cols-sm-2 ps-2 pb-1 pb-md-3 contactRow">
+                <div class="col contactRowCol d-flex align-items-center mb-3 mb-md-5 py-1 py-md-2 border-end-0">
+                  <div class="contactSvg">
+                    <img src="../img/furnitureIcons/Vector (3).svg" alt="">
+                    <img src="../img/furnitureIcons/Vector (5).svg" class="abs1" alt="">
+                  </div>
+                  <div class="px-2">
+                    <div class="contactText">г. Краматорск</div>
+                    <div class="contactText">ул. Дружбы</div>
+                  </div>
+                </div>
+                <div class="col contactRowCol d-flex align-items-center mb-1 mb-md-5 py-1 py-md-2 border-end-0">
+                  <div class="contactSvg">
+                    <img src="../img/furnitureIcons/Vector (2).svg" alt="">
+                    <img src="../img/furnitureIcons/Vector (4).svg" class="abs2" alt="">
+                  </div>
+                  <div class="px-2">
+                    <div class="contactText">Будни с 10 до 19</div>
+                    <div class="contactText">Выходные с 10 до 18</div>
+                  </div>
+                </div>
+              </div>
+              <div class="title text-light mb-4 textB">Следите за нами в соцсетях</div>
+              <div class="row row-cols-1 row-cols-sm-2 ps-2 pb-1 pb-md-3 contactRow">
+                <div class="col contactRowCol d-flex align-items-center mb-1 mb-md-5 py-1 py-md-2 border-end-0">
+                  <span class="contactIcon"><img src="../img/furnitureIcons/vk-min.png" alt=""></span>
+                  <div class="px-2 contactText"><a href="#"><span>Подписаться в VK</spa></a></div>
+                </div>
+                <div class="col contactRowCol d-flex align-items-center mb-1 mb-md-5 py-1 py-md-2 border-end-0">
+                  <span class="contactIcon"><img src="../img/furnitureIcons/instagram-min.png" alt=""></span>
+                  <div class="px-2 contactText"><a href=""><span>Подписаться в Instagram</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col p-0 mapsCol">
+            <div class="maps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51373.8123159128!2d37.51942212251533!3d48.72950481014735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df97a4c0ea9b9b%3A0x6cfddec1592678ec!2z0JrRgNCw0LzQsNGC0L7RgNGB0LosINCU0L7QvdC10YbQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e1!3m2!1sru!2sua!4v1637157171782!5m2!1sru!2sua"
+                width="" height="" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer mb-3 mb-md-5 pb-2 px-0 textN">
+        <footer class="footerWrapper">
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 ps-2 footerRow animBox animScroll">
+            <div class="col footerBrand d-flex justify-content-start align-items-center">
+              <div class="footerImg logoImg1"><img src="../img/furnitureIcons/лого1.1-min.png" alt=""></div>
+              <div class="footerImg logoImg2 d-none"><img src="../img/furnitureIcons/лого2.2-min.png" alt=""></div>
+            </div>
+            <ul class="col footerInfo my-1 py-1 border-end-0">
+              <li class="footerText"><a href="#" class="text-dark"><span>Каталог мебели</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>Каталог материалов</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>Акции</span></a></li>
+            </ul>
+            <ul class="col footerInfo my-1 py-1 border-end-0">
+              <li class="footerText"><a href="#" class="text-dark"><span>О нас</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>Гарантия</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>Дизайнеры</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>Контакты</span></a></li>
+            </ul>
+            <ul class="col footerInfo my-1 py-1 border-end-0">
+              <li class="footerText"><a href="#" class="text-dark"><span>Услуги</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>Мебель в кредит</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>Мебель в рассрочку</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>3D визуализация</span></a></li>
+            </ul>
+            <ul class="col footerInfo my-1 py-1 border-end-0">
+              <li class="footerText"><a href="#" class="text-dark"><span>Портфолио</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>По категориям</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>По стилям дизайна</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>По реализованным проектам</span></a></li>
+            </ul>
+            <ul class="col footerInfo my-1 py-1 border-end-0">
+              <li class="footerText"><a href="#" class="text-dark"><span>Полезно</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>Замеры помещения</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>Подготовка к монтажу</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>Уход за мебелью</span></a></li>
+              <li class="footerText"><a href="#" class="text-dark"><span>Сертификаты материалов</spa></a></li>
+            </ul>
+          </div>
+          <hr>
+          <div class="row row-cols-2 row-cols-lg-3 ps-2 footerRow2 animBox animScroll">
+            <div class="col col-12 col-lg-6 footerInfo my-1 py-1 border-end-0">
+              <div class="footerText">Использование материалов с данного сайта, разрешена только по согласию с владельцем. Вся
+                предоставленная на сайте
+                информация ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2)
+                Гражданского
+                кодекса Украины</div>
+            </div>
+            <div class="col col-6 col-lg-3 footerInfo my-1 py-1 border-end-0">
+              <div class="footerText">ИНН 6685187196</div>
+              <div class="footerText">КПП 668501001</div>
+              <div class="footerText">ОГРН 1216600030316</div>
+            </div>
+            <div class="col col-6 col-lg-3 footerInfo my-1 py-1 border-end-0">
+              <div class="footerText">© 2008-2021 Mebel Furniture</div>
+              <div class="footerText">Политика конфиденциальности</div>
+              <div class="footerText">Верстка: vsepofic@gmail.com</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      
+      <div class="preloaderBox container-fluid">
+        <div class="preloader">
+          <div class="preloaderImg">
+            <div class="battonFreedomBtn">
+              <p class="freedomBtn">
+                <span class="freedomBtnText shadow-black">
+                  <span>LOADING</span>
+                </span>
+              </p>
+              <p class="freedomBut"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+  <script type="text/javascript" src="../js/language.js"></script>
+  <script type="text/javascript" src="../js/furniture.js"></script>
+  <script type="text/javascript" src="js/contacts.js"></script>
+</body>
+
+</html>

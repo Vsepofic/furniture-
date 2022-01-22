@@ -1,0 +1,2393 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79P0U.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ptsans/v12/jizfRExUiTo99u79B_mh4Ok.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ptserif/v12/EJRVQgYoZZY2vCFuvDFR.ttf) format('truetype');
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  cursor: default;
+}
+.textN {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+.textB {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+}
+.textT {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.hrDanger {
+  width: 90%;
+  height: 1px;
+  background-color: red;
+}
+.bgLight {
+  background-color: #fafafa;
+}
+.bgDark {
+  background-color: #323232;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.wrapper .topContact .topContactRow .topContactBrand .topContactImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper .topContact .topContactRow .topContactInfo {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .topContact .topContactRow .topContactInfo .topContactIcon {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px;
+}
+.wrapper .topContact .topContactRow .topContactInfo .topContactIcon img {
+  width: 25px;
+  height: 25px;
+}
+.wrapper .topContact .topContactRow .topContactInfo .topContactIcon:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .topContact .topContactRow .topContactInfo .topLink {
+  position: relative;
+}
+.wrapper .topContact .topContactRow .topContactInfo .topLink span {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+.wrapper .topContact .topContactRow .topContactInfo .topLink span:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  background-color: #191919;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
+}
+.wrapper .topContact .topContactRow .topContactInfo .topLink :hover span:after {
+  left: 0;
+  width: 100%;
+  background-color: #7d7d7d;
+}
+.wrapper .topContact .topContactRow .topContactInfo .infoCol .specImg img {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+.wrapper .menuNavbar {
+  z-index: 9;
+}
+.wrapper .menuNavbar .navbar {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.wrapper .menuNavbar .navbar .navbarBox .collapse ul .nav-item img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.wrapper .menuNavbar .navbar .navbarBox .collapse ul select {
+  height: 30px;
+  font-size: 13px;
+}
+.wrapper .menuNavbar .navbar .navbarBox .collapse form {
+  position: relative;
+}
+.wrapper .menuNavbar .navbar .navbarBox .collapse form input {
+  height: 30px;
+  font-size: 13px;
+}
+.wrapper .menuNavbar .navbar .navbarBox .collapse form button {
+  height: 30px;
+  font-size: 13px;
+}
+.wrapper .menuNavbar .navbar .navbarBox .collapse form .navElastic {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  max-width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+}
+.wrapper .menuNavbar .navbar .navbarBox .collapse form .navElastic .elastic p {
+  margin: 0px;
+  padding: 5px 10px 0;
+  color: #000000;
+  transition: 0.3s ease-in-out;
+}
+.wrapper .menuNavbar .navbar .navbarBox .collapse form .navElastic .elastic p:hover {
+  background-color: #ebebeb;
+  transition: 0.3s ease-in-out;
+}
+.wrapper .menuNavbar .navbar .navbarBox .collapse form .navElastic .elastic p.hide {
+  display: none;
+}
+.wrapper .menuNavbar .navbar .navbarBox .collapse form .navElastic mark {
+  background-color: #fac896;
+}
+.wrapper .menuNavbar .navbar:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .carouselBox .carouselSlide {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.wrapper .carouselBox .carouselSlide .carousel-inner .carousel-item {
+  height: 40vw;
+}
+.wrapper .carouselBox .carouselSlide .carousel-inner .carousel-item .carouselImg {
+  width: 100%;
+  height: 40vw;
+}
+.wrapper .carouselBox .carouselSlide .carousel-inner .carousel-item .carouselImg img {
+  max-width: 100%;
+  width: auto\9;
+  height: 40vw;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+.wrapper .carouselBox .carouselSlide .carousel-inner .carousel-item .carousel-caption .textCarousel {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.wrapper .carouselBox .carouselSlide .carousel-control-prev {
+  justify-content: start;
+}
+.wrapper .carouselBox .carouselSlide .carousel-control-next {
+  justify-content: end;
+}
+.wrapper .carouselBox .carouselSlide:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .service .servInfo .servInfoItem {
+  min-height: 100%;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .service .servInfo .servInfoItem .servInfoText {
+  flex: 1 1 auto;
+}
+.wrapper .steps .stepsRow .stepsRowCol .stepsCircle {
+  position: relative;
+}
+.wrapper .steps .stepsRow .stepsRowCol .stepsCircle .stepsColumn {
+  position: relative;
+}
+.wrapper .steps .stepsRow .stepsRowCol .stepsCircle .stepsColumn .stepItem {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .steps .stepsRow .stepsRowCol .stepsCircle .stepsColumn .stepItem .stepNumber {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  z-index: 1;
+  font-size: 30px;
+}
+.wrapper .steps .stepsRow .stepsRowCol .stepsCircle .stepsColumn .stepItem:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .steps .stepsRow .stepsRowCol .stepsCircle .stepsBorder {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 80%;
+}
+.wrapper .steps .stepsRow .stepsRowCol .stepsInfo .stepsInfoColumn {
+  min-height: 100%;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .steps .stepsRow .stepsRowCol .stepsInfo .stepsInfoColumn .stepsInfoTitle {
+  flex: 1 1 auto;
+}
+.wrapper .menuImg .menuImgBox .cardItem {
+  padding: 0;
+  height: auto;
+  position: relative;
+}
+.wrapper .menuImg .menuImgBox .cardItem .cardImg {
+  width: 100%;
+  height: 250px;
+}
+.wrapper .menuImg .menuImgBox .cardItem .cardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .menuImg .menuImgBox .cardItem .cardImg img:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper #goUp {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 25;
+}
+.wrapper .homeUp {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
+}
+.wrapper .homeUp .footerArrowPosition {
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .homeUp .footerArrowPosition .footerArrow {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 50%;
+  animation: footer-arrow 2s ease-out 1s infinite alternate;
+}
+.wrapper .homeUp .footerArrowPosition .footerArrow .footerArrow1 {
+  margin-top: auto;
+  width: 15px;
+  height: 15px;
+  border-right: 2px solid gray;
+  border-bottom: 2px solid gray;
+  transform: rotate(225deg);
+}
+.wrapper .homeUp .footerArrowPosition .footerArrow .footerArrow2 {
+  width: 20px;
+  height: 20px;
+  border-right: 3px solid gray;
+  border-bottom: 3px solid gray;
+  transform: rotate(225deg);
+}
+.wrapper .homeUp .footerArrowPosition .footerText {
+  animation: footer-text 2s ease-out 1s infinite alternate;
+}
+@keyframes footer-arrow {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0.2;
+  }
+}
+@keyframes footer-text {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+.wrapper .homeUp_hide {
+  opacity: 0;
+  transform: translateX(150px);
+  transition: all 0.5s ease-in-out;
+}
+.wrapper .timeCost .timeCostRow {
+  display: flex;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.wrapper .timeCost .timeCostRow .timeCostCol1 {
+  width: 90%;
+  margin-left: 5%;
+}
+.wrapper .timeCost .timeCostRow .timeCostCol1 .timeCostText {
+  width: 80%;
+}
+.wrapper .timeCost .timeCostRow .timeCostCol2 {
+  width: 80%;
+  margin-left: 5%;
+  position: relative;
+}
+.wrapper .timeCost .timeCostRow .timeCostCol2 .timeCostCol a {
+  width: 70%;
+}
+.wrapper .timeCost .timeCostRow .timeCostCol2 .timeCostCol a .timeCostItem .timeCostIcon img {
+  width: 25px;
+  height: 25px;
+}
+.wrapper .timeCost .timeCostRow .timeCostCol2 .timeCostArow2 {
+  position: absolute;
+  bottom: 15%;
+  left: -30%;
+  transform: rotate(40deg);
+}
+.wrapper .timeCost .timeCostRow .timeCostCol2 .timeCostArow2 img {
+  width: 150px;
+}
+.wrapper .timeCost .timeCostRow:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .measurers .measurersBox .measurersCol .measurersRow .measurersRowCol {
+  min-height: 100%;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .measurers .measurersBox .measurersCol .measurersRow .measurersRowCol .measurersText {
+  flex: 1 1 auto;
+}
+.wrapper .measurers .measurersBox .measurersCol .measurersImg {
+  height: 40vh;
+}
+.wrapper .measurers .measurersBox .measurersCol .measurersImg img {
+  clip-path: polygon(0 34%, 12% 5%, 44% 20%, 85% 0%, 100% 21%, 88% 47%, 100% 72%, 100% 100%, 65% 100%, 56% 90%, 25% 95%, 0% 85%);
+  max-width: 100%;
+  width: auto\9;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
+  transition: ease 1s;
+}
+.wrapper .measurers .measurersBox .measurersCol .measurersImg img:hover {
+  transform: scale(1.1);
+  transition: ease 1s;
+}
+.wrapper .designers .designersBox .designersCol .designersImg {
+  height: 40vh;
+}
+.wrapper .designers .designersBox .designersCol .designersImg img {
+  clip-path: polygon(0 5%, 23% 18%, 45% 7%, 83% 7%, 100% 0, 94% 34%, 100% 71%, 100% 100%, 53% 86%, 19% 100%, 9% 73%, 4% 53%);
+  max-width: 100%;
+  width: auto\9;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
+  transition: ease 1s;
+}
+.wrapper .designers .designersBox .designersCol .designersImg img:hover {
+  transform: scale(1.1);
+  transition: ease 1s;
+}
+.wrapper .designers .designersBox .designersCol .designersRow .designersRowCol .designersRow2 .designersRowCol2 {
+  min-height: 100%;
+}
+.wrapper .designers .designersBox .designersCol .designersRow .designersRowCol .designersRow2 .designersRowCol2 .designersText {
+  flex: 1 1 auto;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .designersCard .designersBox .designersColumn .cardItem {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  min-height: 100%;
+}
+.wrapper .designersCard .designersBox .designersColumn .cardItem .cardImg {
+  width: 100%;
+  height: auto;
+}
+.wrapper .designersCard .designersBox .designersColumn .cardItem .cardImg img {
+  width: 250px;
+  height: 250px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .designersCard .designersBox .designersColumn .cardItem .cardImg img:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .designersCard .designersBox .designersColumn .cardItem:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .drawing .drawingBox .drawingCol {
+  position: relative;
+}
+.wrapper .drawing .drawingBox .drawingCol .drawingText {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .drawing .drawingBox .drawingCol .drawingImg img {
+  width: 100%;
+  transition: ease 1s;
+}
+.wrapper .drawing .drawingBox .drawingCol .drawingImg img:hover {
+  transform: scale(1.1);
+  transition: ease 1s;
+}
+.wrapper .drawing .drawingBox .drawingCol form .file .filePreview {
+  display: inline-block;
+  max-width: 200px;
+  padding: 10px 0px 0px 0px;
+}
+.wrapper .drawing .drawingBox .drawingCol form .file .filePreview img {
+  max-width: 100%;
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody {
+  position: relative;
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody .formItem .formInput {
+  height: 30px;
+  padding: 0 20px;
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.5s ease 0s;
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody .formItem .formInput:focus {
+  box-shadow: 0 0 10px #dcdcdc;
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody .formItem .formInput.error {
+  box-shadow: 0 0 10px red;
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody .formItem .file .fileItem {
+  position: relative;
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody .formItem .file .fileItem .fileInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody .formItem .file .filePreview {
+  display: inline-block;
+  max-width: 200px;
+  padding: 10px 0px 0px 0px;
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody .formItem .file .filePreview img {
+  max-width: 100%;
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody .formItem .checkbox .checkboxInput {
+  display: none;
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody .formItem .checkbox .checkboxInput:checked + .checkboxLabel::after {
+  transform: scale(1);
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody .formItem .checkbox .checkboxLabel {
+  font-size: 16px;
+  line-height: 140%;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody .formItem .checkbox .checkboxLabel::before {
+  content: "";
+  align-self: flex-start;
+  flex: 0 0 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 4px;
+  margin: 0px 10px 0px 0px;
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody .formItem .checkbox .checkboxLabel::after {
+  transition: transform 0.3s ease 0s;
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background-color: #006400;
+  border-radius: 4px;
+  transform: scale(0);
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody .formItem .checkbox.error .checkboxLabel::before {
+  box-shadow: 0 0 10px red;
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(50, 50, 50, 0.5) url("../img/furnitureIcons/load.gif") center / 50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+.wrapper .drawing .drawingBox .drawingCol .formBody.sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+.wrapper .drawing .drawingBox .drawingCol .drawingPostLink {
+  width: 100%;
+  position: relative;
+}
+.wrapper .drawing .drawingBox .drawingCol .drawingPostLink span {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+.wrapper .drawing .drawingBox .drawingCol .drawingPostLink span:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  background-color: #191919;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
+}
+.wrapper .drawing .drawingBox .drawingCol .drawingPostLink :hover {
+  color: #7d7d7d;
+}
+.wrapper .drawing .drawingBox .drawingCol .drawingPostLink :hover span:after {
+  left: 0;
+  width: 100%;
+  background-color: #7d7d7d;
+}
+.wrapper .drawing .drawingBox .drawingCol .drawingPost {
+  position: relative;
+}
+.wrapper .drawing .drawingBox .drawingCol .drawingPost .drawingPostCol a {
+  width: 100%;
+}
+.wrapper .drawing .drawingBox .drawingCol .drawingPost .drawingPostCol a .drawingPostItem .drawingPostIcon img {
+  width: 25px;
+  height: 25px;
+}
+.wrapper .drawing .drawingBox .drawingCol .drawingPost .drawingPostArow {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  transform: rotate(250deg);
+}
+.wrapper .drawing .drawingBox .drawingCol .drawingPost .drawingPostArow img {
+  width: 100px;
+}
+.wrapper .drawing .drawingBox .colShadow {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.wrapper .drawing .drawingBox .colShadow:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .masters .mastersBox .mastersCol .mastersRow .mastersRowCol {
+  min-height: 100%;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .masters .mastersBox .mastersCol .mastersRow .mastersRowCol .mastersText {
+  flex: 1 1 auto;
+}
+.wrapper .masters .mastersBox .mastersCol .mastersIMG {
+  height: 40vh;
+}
+.wrapper .masters .mastersBox .mastersCol .mastersIMG img {
+  clip-path: polygon(0 20%, 25% 0, 49% 15%, 72% 0, 100% 0, 94% 34%, 100% 80%, 80% 100%, 65% 83%, 19% 100%, 0 82%, 16% 59%);
+  max-width: 100%;
+  width: auto\9;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
+  transition: ease 1s;
+}
+.wrapper .masters .mastersBox .mastersCol .mastersIMG img:hover {
+  transform: scale(1.1);
+  transition: ease 1s;
+}
+.wrapper .catalog .catalogBox {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.wrapper .catalog .catalogBox .contents.contentsLight .btn {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+.wrapper .catalog .catalogBox .contents.contentsLight .btn:active {
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+.wrapper .catalog .catalogBox .contents.contentsLight .btn::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: auto;
+  background: #000;
+  visibility: hidden;
+  opacity: 0;
+}
+.wrapper .catalog .catalogBox .contents.contentsLight .btn:hover::before {
+  animation: sword 0.6s;
+}
+@keyframes sword {
+  0% {
+    top: -100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    top: 100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.wrapper .catalog .catalogBox .contents.contentsLight .btn a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+.wrapper .catalog .catalogBox .contents.contentsLight .btn a::before,
+.wrapper .catalog .catalogBox .contents.contentsLight .btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 35px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transition: all 0.5s 0s;
+}
+.wrapper .catalog .catalogBox .contents.contentsLight .btn a::before {
+  left: 0;
+  border-left: 1px solid #000;
+  border-radius: 5px 0 0 5px;
+}
+.wrapper .catalog .catalogBox .contents.contentsLight .btn a::after {
+  right: 0;
+  border-right: 1px solid #000;
+  border-radius: 0 5px 5px 0;
+}
+.wrapper .catalog .catalogBox .contents.contentsLight .btn a:hover::before {
+  left: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .catalog .catalogBox .contents.contentsLight .btn a:hover::after {
+  right: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .catalog .catalogBox .contents.contentsDark .btn {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+.wrapper .catalog .catalogBox .contents.contentsDark .btn:active {
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+.wrapper .catalog .catalogBox .contents.contentsDark .btn::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: auto;
+  background: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+}
+.wrapper .catalog .catalogBox .contents.contentsDark .btn:hover::before {
+  animation: sword 0.6s;
+}
+@keyframes sword {
+  0% {
+    top: -100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    top: 100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.wrapper .catalog .catalogBox .contents.contentsDark .btn a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+.wrapper .catalog .catalogBox .contents.contentsDark .btn a::before,
+.wrapper .catalog .catalogBox .contents.contentsDark .btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 35px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  transition: all 0.5s 0s;
+}
+.wrapper .catalog .catalogBox .contents.contentsDark .btn a::before {
+  left: 0;
+  border-left: 1px solid #ffffff;
+  border-radius: 5px 0 0 5px;
+}
+.wrapper .catalog .catalogBox .contents.contentsDark .btn a::after {
+  right: 0;
+  border-right: 1px solid #ffffff;
+  border-radius: 0 5px 5px 0;
+}
+.wrapper .catalog .catalogBox .contents.contentsDark .btn a:hover::before {
+  left: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .catalog .catalogBox .contents.contentsDark .btn a:hover::after {
+  right: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .catalog .catalogBox .divParallax .parallaxRow {
+  height: 25rem;
+}
+.wrapper .catalog .catalogBox .divParallax .parallaxRow .col {
+  height: 25rem;
+}
+.wrapper .catalog .catalogBox .divParallax .parallaxRow .col .left {
+  width: 50%;
+}
+.wrapper .catalog .catalogBox .divParallax .parallaxRow .col .right {
+  width: 70%;
+}
+.wrapper .catalog .catalogBox:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .commentsVideo .commentsBox .commentsCol .commentsRow .commentsRowCol2 {
+  min-height: 100%;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .commentsVideo .commentsBox .commentsCol .commentsRow .commentsRowCol2 .commentsText {
+  flex: 1 1 auto;
+}
+.wrapper .commentsVideo .commentsBox .commentsIMG .commentsIframe {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .commentsVideo .commentsBox .commentsIMG .commentsIframe:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .comments .commentsField #commentsArea {
+  height: 30vh;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+.wrapper .comments .commentsField #commentsForm .commentsRow2 .commentsCol2 input {
+  border-radius: 5px;
+}
+.wrapper .comments .commentsField #commentsForm .commentsRow2 .commentsCol2 textarea {
+  border-radius: 5px;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn {
+  position: relative;
+  width: 220px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn:active {
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: auto;
+  background: #000;
+  visibility: hidden;
+  opacity: 0;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn:hover::before {
+  animation: sword 0.6s;
+}
+@keyframes sword {
+  0% {
+    top: -100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    top: 100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn a::before,
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 110px;
+  height: 35px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transition: all 0.5s 0s;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn a::before {
+  left: 0;
+  border-left: 1px solid #000;
+  border-radius: 5px 0 0 5px;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn a::after {
+  right: 0;
+  border-right: 1px solid #000;
+  border-radius: 0 5px 5px 0;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn a:hover::before {
+  left: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn a:hover::after {
+  right: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn {
+  position: relative;
+  width: 220px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn:active {
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: auto;
+  background: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn:hover::before {
+  animation: sword 0.6s;
+}
+@keyframes sword {
+  0% {
+    top: -100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    top: 100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn a::before,
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 110px;
+  height: 35px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  transition: all 0.5s 0s;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn a::before {
+  left: 0;
+  border-left: 1px solid #ffffff;
+  border-radius: 5px 0 0 5px;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn a::after {
+  right: 0;
+  border-right: 1px solid #ffffff;
+  border-radius: 0 5px 5px 0;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn a:hover::before {
+  left: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn a:hover::after {
+  right: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .newMail .newMailRow {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.wrapper .newMail .newMailRow .newMailCol .newMailImg img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .newMail .newMailRow .newMailCol .newMailText {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .newMail .newMailRow .newMailCol .newMailBtn {
+  width: 80%;
+  margin: auto;
+}
+.wrapper .newMail .newMailRow .newMailCol .newMailBtn img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .newMail .newMailRow:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .specialist .specRow .specRowCol .specRow2 .specRowCol2 {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .specialist .specRow .specRowCol .specRow2 .specRowCol2 .specImgCol .specImg img {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+.wrapper .specialist .specRow .specRowCol .specRow2 .specRowCol2 .specImgCol .specLink {
+  position: relative;
+}
+.wrapper .specialist .specRow .specRowCol .specRow2 .specRowCol2 .specImgCol .specLink span {
+  position: relative;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+.wrapper .specialist .specRow .specRowCol .specRow2 .specRowCol2 .specImgCol .specLink span:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
+}
+.wrapper .specialist .specRow .specRowCol .specRow2 .specRowCol2 .specImgCol .specLink :hover {
+  color: #7d7d7d;
+}
+.wrapper .specialist .specRow .specRowCol .specRow2 .specRowCol2 .specImgCol .specLink :hover span:after {
+  left: 0;
+  width: 100%;
+  background-color: #7d7d7d;
+}
+.wrapper .specialist .specRow .specRowCol .formWrapper {
+  background-color: white;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.wrapper .specialist .specRow .specRowCol .formWrapper:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .contactMaps .contactMapsRow {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.wrapper .contactMaps .contactMapsRow .contactCol {
+  border-radius: 5px;
+}
+.wrapper .contactMaps .contactMapsRow .contactCol .contactBox {
+  width: 90%;
+}
+.wrapper .contactMaps .contactMapsRow .contactCol .contactBox .contactRow .contactRowCol {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .contactMaps .contactMapsRow .contactCol .contactBox .contactRow .contactRowCol .contactSvg {
+  position: relative;
+}
+.wrapper .contactMaps .contactMapsRow .contactCol .contactBox .contactRow .contactRowCol .contactSvg .abs1 {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}
+.wrapper .contactMaps .contactMapsRow .contactCol .contactBox .contactRow .contactRowCol .contactSvg .abs2 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+.wrapper .contactMaps .contactMapsRow .contactCol .contactBox .contactRow .contactRowCol .contactIcon img {
+  width: 30px;
+  height: 30px;
+}
+.wrapper .contactMaps .contactMapsRow .contactCol .contactBox .contactRow .contactRowCol .contactText {
+  position: relative;
+}
+.wrapper .contactMaps .contactMapsRow .contactCol .contactBox .contactRow .contactRowCol .contactText a {
+  color: #fafafa;
+}
+.wrapper .contactMaps .contactMapsRow .contactCol .contactBox .contactRow .contactRowCol .contactText span {
+  position: relative;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+.wrapper .contactMaps .contactMapsRow .contactCol .contactBox .contactRow .contactRowCol .contactText span:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  background-color: #fafafa;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
+}
+.wrapper .contactMaps .contactMapsRow .contactCol .contactBox .contactRow .contactRowCol .contactText :hover {
+  color: #7d7d7d;
+}
+.wrapper .contactMaps .contactMapsRow .contactCol .contactBox .contactRow .contactRowCol .contactText :hover span:after {
+  left: 0;
+  width: 100%;
+  background-color: #7d7d7d;
+}
+.wrapper .contactMaps .contactMapsRow .mapsCol {
+  border-radius: 5px;
+}
+.wrapper .contactMaps .contactMapsRow .mapsCol .maps {
+  width: 100%;
+  height: 50vh;
+}
+.wrapper .contactMaps .contactMapsRow .mapsCol .maps iframe {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .contactMaps .contactMapsRow:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .footer .footerWrapper .footerRow .footerBrand .footerImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper .footer .footerWrapper .footerRow .footerInfo {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .footer .footerWrapper .footerRow .footerInfo .footerText {
+  position: relative;
+}
+.wrapper .footer .footerWrapper .footerRow .footerInfo .footerText a {
+  color: #fafafa;
+}
+.wrapper .footer .footerWrapper .footerRow .footerInfo .footerText span {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+.wrapper .footer .footerWrapper .footerRow .footerInfo .footerText span:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  background-color: #fafafa;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
+}
+.wrapper .footer .footerWrapper .footerRow .footerInfo .footerText :hover {
+  color: #7d7d7d;
+}
+.wrapper .footer .footerWrapper .footerRow .footerInfo .footerText :hover span:after {
+  left: 0;
+  width: 100%;
+  background-color: #7d7d7d;
+}
+.wrapper .footer .footerWrapper .footerRow2 .footerInfo {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .contentsLight .btn {
+  position: relative;
+  width: 180px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+.wrapper .contentsLight .btn:active {
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+.wrapper .contentsLight .btn::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: auto;
+  background: #000;
+  visibility: hidden;
+  opacity: 0;
+}
+.wrapper .contentsLight .btn:hover::before {
+  animation: sword 0.6s;
+}
+@keyframes sword {
+  0% {
+    top: -100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    top: 100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.wrapper .contentsLight .btn a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+.wrapper .contentsLight .btn a::before,
+.wrapper .contentsLight .btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 90px;
+  height: 35px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transition: all 0.5s 0s;
+}
+.wrapper .contentsLight .btn a::before {
+  left: 0;
+  border-left: 1px solid #000;
+  border-radius: 5px 0 0 5px;
+}
+.wrapper .contentsLight .btn a::after {
+  right: 0;
+  border-right: 1px solid #000;
+  border-radius: 0 5px 5px 0;
+}
+.wrapper .contentsLight .btn a:hover::before {
+  left: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .contentsLight .btn a:hover::after {
+  right: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .contentsDark .btn {
+  position: relative;
+  width: 180px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+.wrapper .contentsDark .btn:active {
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+.wrapper .contentsDark .btn::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: auto;
+  background: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+}
+.wrapper .contentsDark .btn:hover::before {
+  animation: sword 0.6s;
+}
+@keyframes sword {
+  0% {
+    top: -100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    top: 100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.wrapper .contentsDark .btn a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+.wrapper .contentsDark .btn a::before,
+.wrapper .contentsDark .btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 90px;
+  height: 35px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  transition: all 0.5s 0s;
+}
+.wrapper .contentsDark .btn a::before {
+  left: 0;
+  border-left: 1px solid #ffffff;
+  border-radius: 5px 0 0 5px;
+}
+.wrapper .contentsDark .btn a::after {
+  right: 0;
+  border-right: 1px solid #ffffff;
+  border-radius: 0 5px 5px 0;
+}
+.wrapper .contentsDark .btn a:hover::before {
+  left: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .contentsDark .btn a:hover::after {
+  right: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .animBox.animScroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-in-out;
+}
+.wrapper .animBox.animScroll.elementShow {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease-in-out;
+}
+.wrapper .animBlock.animScroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-in-out;
+}
+.wrapper .animBlock.animScroll.elementShow {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease-in-out;
+}
+.wrapper .animBlock.animScroll:nth-of-type(2).elementShow {
+  transition-delay: 0.25s;
+}
+.wrapper .animBlock.animScroll:nth-of-type(3).elementShow {
+  transition-delay: 0.5s;
+}
+.wrapper .animBlock.animScroll:nth-of-type(4).elementShow {
+  transition-delay: 0.75s;
+}
+.wrapper .title.animScroll {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 1s ease-in-out;
+}
+.wrapper .title.animScroll.elementShow {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+.wrapper .cardImg.animScroll {
+  opacity: 0;
+  transform: rotate(-5deg) scale(0.95);
+  transition: all 1s ease-in-out;
+}
+.wrapper .cardImg.animScroll.elementShow {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+  transition: all 1s ease-in-out;
+}
+.wrapper .animCol1.animScroll {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease-in-out;
+}
+.wrapper .animCol1.animScroll.elementShow {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+.wrapper .animCol2.animScroll {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 1s ease-in-out;
+}
+.wrapper .animCol2.animScroll.elementShow {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+.wrapper .preloaderBox .preloader {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: #191919;
+  opacity: 0.9;
+  z-index: 10;
+}
+.wrapper .preloaderBox .preloader .preloaderImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+.wrapper .preloaderBox .preloader .preloaderImg .battonFreedomBtn .freedomBtn {
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+.wrapper .preloaderBox .preloader .preloaderImg .battonFreedomBtn .freedomBtn .freedomBtnText {
+  position: relative;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 53px;
+  font-size: 20px;
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 5px;
+  top: 0;
+}
+.wrapper .preloaderBox .preloader .preloaderImg .battonFreedomBtn .freedomBtn::before,
+.wrapper .preloaderBox .preloader .preloaderImg .battonFreedomBtn .freedomBtn::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  border: 2px solid red;
+  border-radius: 20px;
+  top: -20px;
+  left: 12%;
+  z-index: 1;
+  margin: 0px 0px 0px -40px;
+  transition: all 0.8s ease 0s;
+}
+.wrapper .preloaderBox .preloader .preloaderImg .battonFreedomBtn .freedomBtn::before {
+  animation: rotate2 6s infinite linear;
+}
+.wrapper .preloaderBox .preloader .preloaderImg .battonFreedomBtn .freedomBtn::after {
+  animation: rotate2 4s infinite linear;
+}
+.wrapper .preloaderBox .preloader .preloaderImg .battonFreedomBtn .freedomBut {
+  position: absolute;
+  display: inline-block;
+  top: 30px;
+  left: 25px;
+}
+.wrapper .preloaderBox .preloader .preloaderImg .battonFreedomBtn .freedomBut::before,
+.wrapper .preloaderBox .preloader .preloaderImg .battonFreedomBtn .freedomBut::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  border: 2px solid red;
+  border-radius: 20px;
+  z-index: 1;
+  margin: 0px 0px 0px -40px;
+  transition: all 0.8s ease 0s;
+}
+.wrapper .preloaderBox .preloader .preloaderImg .battonFreedomBtn .freedomBut::before {
+  animation: rotate 6s infinite linear;
+}
+.wrapper .preloaderBox .preloader .preloaderImg .battonFreedomBtn .freedomBut::after {
+  animation: rotate 4s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.loaded .preloader {
+  display: none;
+}
+@media only screen and (max-width: 1399px) {
+  .textN {
+    font-size: 15px;
+  }
+  .textB {
+    font-size: 19px;
+  }
+  .textT {
+    font-size: 28px;
+  }
+  .wrapper .topContact .topContactRow .topContactInfo .topContactIcon img {
+    width: 23px;
+    height: 23px;
+  }
+  .wrapper .topContact .topContactRow .topContactInfo .infoCol .specImg img {
+    margin-right: 5px;
+    width: 23px;
+    height: 23px;
+  }
+  .wrapper .menuImg .menuImgBox .contents.contentsLight .btn {
+    width: 170px;
+    height: 35px;
+  }
+  .wrapper .menuImg .menuImgBox .contents.contentsLight .btn a::before,
+  .wrapper .menuImg .menuImgBox .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 35px;
+  }
+  .wrapper .menuImg .menuImgBox .contents.contentsDark .btn {
+    width: 170px;
+    height: 35px;
+  }
+  .wrapper .menuImg .menuImgBox .contents.contentsDark .btn a::before,
+  .wrapper .menuImg .menuImgBox .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 35px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsLight .btn {
+    width: 170px;
+    height: 35px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsLight .btn a::before,
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 35px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsDark .btn {
+    width: 170px;
+    height: 35px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsDark .btn a::before,
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 35px;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsLight .btn {
+    width: 170px;
+    height: 35px;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsLight .btn a::before,
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 35px;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsDark .btn {
+    width: 170px;
+    height: 35px;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsDark .btn a::before,
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 35px;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow {
+    height: 20rem;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow .col {
+    height: 20rem;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow .col .left {
+    width: 50%;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow .col .right {
+    width: 70%;
+  }
+  .wrapper .comments .commentsField #commentsArea {
+    overflow-y: scroll;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow {
+    width: 48px;
+    height: 48px;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow .footerArrow1 {
+    width: 14px;
+    height: 14px;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow .footerArrow2 {
+    width: 19px;
+    height: 19px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .textN {
+    font-size: 14px;
+  }
+  .textB {
+    font-size: 18px;
+  }
+  .textT {
+    font-size: 26px;
+  }
+  .wrapper .topContact .topContactRow .topContactInfo .topContactIcon img {
+    width: 21px;
+    height: 21px;
+  }
+  .wrapper .topContact .topContactRow .topContactInfo .infoCol .specImg img {
+    margin-right: 5px;
+    width: 21px;
+    height: 21px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents .btn {
+    width: 160px;
+    height: 35px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents .btn a::before,
+  .wrapper .measurers .measurersBox .measurersCol .contents .btn a::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 35px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents .btn {
+    width: 170px;
+    height: 35px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents .btn a::before,
+  .wrapper .measurers .measurersBox .measurersCol .contents .btn a::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 35px;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsLight .btn {
+    width: 160px;
+    height: 35px;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsLight .btn a::before,
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 35px;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsDark .btn {
+    width: 160px;
+    height: 35px;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsDark .btn a::before,
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 35px;
+  }
+  .wrapper .comments .commentsField #commentsArea {
+    overflow-y: scroll;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow {
+    width: 45px;
+    height: 45px;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow .footerArrow1 {
+    width: 13px;
+    height: 13px;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow .footerArrow2 {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .textN {
+    font-size: 13px;
+  }
+  .textB {
+    font-size: 16px;
+  }
+  .textT {
+    font-size: 24px;
+  }
+  .wrapper .topContact .topContactRow .topContactInfo .topContactIcon img {
+    width: 18px;
+    height: 18px;
+  }
+  .wrapper .topContact .topContactRow .topContactInfo .infoCol .specImg img {
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+  }
+  .wrapper .steps .stepsRow .stepsRowCol .stepsCircle {
+    position: relative;
+    height: 100%;
+  }
+  .wrapper .steps .stepsRow .stepsRowCol .stepsCircle .stepsColumn {
+    position: relative;
+  }
+  .wrapper .steps .stepsRow .stepsRowCol .stepsCircle .stepsColumn .stepItem {
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+  .wrapper .steps .stepsRow .stepsRowCol .stepsCircle .stepsColumn .stepItem .stepNumber {
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    z-index: 1;
+    font-size: 20px;
+  }
+  .wrapper .steps .stepsRow .stepsRowCol .stepsCircle .stepsBorder {
+    position: absolute;
+    top: 10%;
+    left: 49%;
+    height: 80%;
+  }
+  .wrapper .menuImg .menuImgBox .contents.contentsLight .btn {
+    width: 160px;
+    height: 30px;
+  }
+  .wrapper .menuImg .menuImgBox .contents.contentsLight .btn a::before,
+  .wrapper .menuImg .menuImgBox .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 30px;
+  }
+  .wrapper .menuImg .menuImgBox .contents.contentsDark .btn {
+    width: 160px;
+    height: 30px;
+  }
+  .wrapper .menuImg .menuImgBox .contents.contentsDark .btn a::before,
+  .wrapper .menuImg .menuImgBox .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 30px;
+  }
+  .wrapper .menuImg .menuImgBox .cardItem {
+    padding: 0;
+    height: auto;
+    position: relative;
+  }
+  .wrapper .menuImg .menuImgBox .cardItem .cardImg {
+    width: 100%;
+    height: 225px;
+  }
+  .wrapper .menuImg .menuImgBox .cardItem .cardImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .wrapper .timeCost .timeCostRow {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper .timeCost .timeCostRow .timeCostCol1 {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .wrapper .timeCost .timeCostRow .timeCostCol1 .timeCostText {
+    width: 80%;
+  }
+  .wrapper .timeCost .timeCostRow .timeCostCol2 {
+    width: 80%;
+    margin-left: 5%;
+    position: relative;
+  }
+  .wrapper .timeCost .timeCostRow .timeCostCol2 .timeCostItem {
+    width: 50% !important;
+    margin-left: 10% !important;
+  }
+  .wrapper .timeCost .timeCostRow .timeCostCol2 .timeCostItem .timeCostIcon img {
+    width: 27px;
+    height: 27px;
+  }
+  .wrapper .timeCost .timeCostRow .timeCostCol2 .timeCostArow {
+    position: absolute;
+    top: 10%;
+    right: -5%;
+    transform: rotate(-100deg);
+  }
+  .wrapper .timeCost .timeCostRow .timeCostCol2 .timeCostArow img {
+    width: 110px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsLight .btn {
+    width: 150px;
+    height: 32px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsLight .btn a::before,
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 32px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsDark .btn {
+    width: 150px;
+    height: 32px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsDark .btn a::before,
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 32px;
+  }
+  .wrapper .measurers .measurersBox .measurersImg {
+    height: 35vh;
+  }
+  .wrapper .measurers .measurersBox .measurersImg img {
+    max-width: 100%;
+    width: auto\9;
+    height: 35vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  .wrapper .designers .designersBox .designersImg {
+    height: 35vh;
+  }
+  .wrapper .designers .designersBox .designersImg img {
+    max-width: 100%;
+    width: auto\9;
+    height: 35vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsLight .btn {
+    width: 150px;
+    height: 32px;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsLight .btn a::before,
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 32px;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsDark .btn {
+    width: 150px;
+    height: 32px;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsDark .btn a::before,
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 32px;
+  }
+  .wrapper .drawing .drawingBox .drawingCol .drawingPost .drawingPostCol .btn {
+    width: 70%;
+  }
+  .wrapper .catalog .catalogBox .contents.contentsLight .btn {
+    width: 170px;
+    height: 32px;
+  }
+  .wrapper .catalog .catalogBox .contents.contentsLight .btn a::before,
+  .wrapper .catalog .catalogBox .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 32px;
+  }
+  .wrapper .catalog .catalogBox .contents.contentsDark .btn {
+    width: 170px;
+    height: 32px;
+  }
+  .wrapper .catalog .catalogBox .contents.contentsDark .btn a::before,
+  .wrapper .catalog .catalogBox .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 32px;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow {
+    height: 15rem;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow .col {
+    height: 15rem;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow .col .left {
+    width: 50%;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow .col .right {
+    width: 70%;
+  }
+  .wrapper .comments .commentsField #commentsArea {
+    overflow-y: scroll;
+  }
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn {
+    width: 190px;
+    height: 32px;
+  }
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn a::before,
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 32px;
+  }
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn {
+    width: 190px;
+    height: 32px;
+  }
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn a::before,
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 32px;
+  }
+  .wrapper .newMail .newMailRow .newMailCol .newMailBtn {
+    width: 40%;
+    margin: auto;
+  }
+  .wrapper .newMail .newMailRow .newMailCol .newMailBtn img {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper .contactMaps .contactMapsRow .contactCol {
+    width: 100%;
+    height: 35vh;
+  }
+  .wrapper .contactMaps .contactMapsRow .mapsCol .maps {
+    width: 100%;
+    height: 35vh;
+  }
+  .wrapper .contactMaps .contactMapsRow .mapsCol .maps iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow {
+    width: 40px;
+    height: 40px;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow .footerArrow1 {
+    width: 12px;
+    height: 12px;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow .footerArrow2 {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .textN {
+    font-size: 12px;
+  }
+  .textB {
+    font-size: 14px;
+  }
+  .textT {
+    font-size: 20px;
+  }
+  .wrapper .topContact .topContactRow .topContactInfo .topContactIcon img {
+    width: 15px;
+    height: 15px;
+  }
+  .wrapper .topContact .topContactRow .topContactInfo .infoCol .specImg img {
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+  }
+  .wrapper .steps .stepsRow .stepsRowCol .stepsCircle {
+    position: relative;
+    height: 100%;
+  }
+  .wrapper .steps .stepsRow .stepsRowCol .stepsCircle .stepsColumn {
+    position: relative;
+  }
+  .wrapper .steps .stepsRow .stepsRowCol .stepsCircle .stepsColumn .stepItem {
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+  .wrapper .steps .stepsRow .stepsRowCol .stepsCircle .stepsColumn .stepItem .stepNumber {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    z-index: 1;
+    font-size: 16px;
+  }
+  .wrapper .steps .stepsRow .stepsRowCol .stepsCircle .stepsBorder {
+    position: absolute;
+    top: 10%;
+    left: 49%;
+    height: 80%;
+  }
+  .wrapper .menuImg .menuImgBox .cardItem {
+    padding: 0;
+    height: auto;
+    position: relative;
+  }
+  .wrapper .menuImg .menuImgBox .cardItem .cardImg {
+    width: 100%;
+    height: 200px;
+  }
+  .wrapper .menuImg .menuImgBox .cardItem .cardImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .wrapper .timeCost .timeCostRow {
+    display: flex;
+  }
+  .wrapper .timeCost .timeCostRow .timeCostCol1 {
+    width: 70%;
+    margin-left: 10%;
+  }
+  .wrapper .timeCost .timeCostRow .timeCostCol1 .timeCostText {
+    width: 60%;
+  }
+  .wrapper .timeCost .timeCostRow .timeCostCol2 {
+    width: 80%;
+    margin-left: 5%;
+    position: relative;
+  }
+  .wrapper .timeCost .timeCostRow .timeCostCol2 .timeCostItem {
+    width: 70% !important;
+    margin-left: 5% !important;
+  }
+  .wrapper .timeCost .timeCostRow .timeCostCol2 .timeCostItem .timeCostIcon img {
+    width: 25px;
+    height: 25px;
+  }
+  .wrapper .timeCost .timeCostRow .timeCostCol2 .timeCostArow {
+    position: absolute;
+    top: 0%;
+    right: -15%;
+    transform: rotate(-120deg);
+  }
+  .wrapper .timeCost .timeCostRow .timeCostCol2 .timeCostArow img {
+    width: 100px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsLight .btn {
+    width: 140px;
+    height: 30px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsLight .btn a::before,
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 30px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsDark .btn {
+    width: 140px;
+    height: 30px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsDark .btn a::before,
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 30px;
+  }
+  .wrapper .measurers .measurersBox .measurersImg {
+    height: 30vh;
+  }
+  .wrapper .measurers .measurersBox .measurersImg img {
+    max-width: 100%;
+    width: auto\9;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  .wrapper .designers .designersBox .designersImg {
+    height: 30vh;
+  }
+  .wrapper .designers .designersBox .designersImg img {
+    max-width: 100%;
+    width: auto\9;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  .wrapper .designersCard .designersBox .designersColumn {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsLight .btn {
+    width: 140px;
+    height: 30px;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsLight .btn a::before,
+  .wrapper .designersCard .designersBox .designersColumn .cardItem .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 30px;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .contents.contentsDark .btn {
+    width: 140px;
+    height: 30px;
+  }
+  .wrapper .designersCard .designersBox .designersColumn .contents.contentsDark .btn a::before,
+  .wrapper .designersCard .designersBox .designersColumn .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 30px;
+  }
+  .wrapper .drawing .drawingBox .drawingCol .drawingPost .drawingPostCol .btn {
+    width: 80%;
+  }
+  .wrapper .catalog .catalogBox .contents.contentsLight .btn {
+    width: 160px;
+    height: 30px;
+  }
+  .wrapper .catalog .catalogBox .contents.contentsLight .btn a::before,
+  .wrapper .catalog .catalogBox .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 30px;
+  }
+  .wrapper .catalog .catalogBox .contents.contentsDark .btn {
+    width: 160px;
+    height: 30px;
+  }
+  .wrapper .catalog .catalogBox .contents.contentsDark .btn a::before,
+  .wrapper .catalog .catalogBox .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 30px;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow {
+    height: 10rem;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow .col {
+    height: 10rem;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow .col .left {
+    width: 50%;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow .col .right {
+    width: 70%;
+  }
+  .wrapper .comments .commentsField #commentsArea {
+    overflow-y: scroll;
+  }
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn {
+    width: 80%;
+    height: 30px;
+  }
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn a::before,
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 51%;
+    height: 30px;
+  }
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn {
+    width: 80%;
+    height: 30px;
+  }
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn a::before,
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 51%;
+    height: 30px;
+  }
+  .wrapper .newMail .newMailRow .newMailCol .newMailBtn {
+    width: 40%;
+    margin: auto;
+  }
+  .wrapper .newMail .newMailRow .newMailCol .newMailBtn img {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper .contactMaps .contactMapsRow .contactCol {
+    width: 100%;
+    height: 30vh;
+  }
+  .wrapper .contactMaps .contactMapsRow .contactCol .contactBox .contactRow .contactRowCol .contactIcon img {
+    width: 25px;
+    height: 25px;
+  }
+  .wrapper .contactMaps .contactMapsRow .mapsCol .maps {
+    width: 100%;
+    height: 30vh;
+  }
+  .wrapper .contactMaps .contactMapsRow .mapsCol .maps iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow {
+    width: 35px;
+    height: 35px;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow .footerArrow1 {
+    width: 10px;
+    height: 10px;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow .footerArrow2 {
+    width: 13px;
+    height: 13px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .textN {
+    font-size: 11px;
+  }
+  .textB {
+    font-size: 13px;
+  }
+  .textT {
+    font-size: 18px;
+  }
+  .wrapper .topContact .topContactRow .topContactInfo .topContactIcon img {
+    width: 13px;
+    height: 13px;
+  }
+  .wrapper .topContact .topContactRow .topContactInfo .infoCol .specImg img {
+    margin-right: 5px;
+    width: 13px;
+    height: 13px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsLight .btn {
+    width: 120px;
+    height: 30px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsLight .btn a::before,
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 30px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsDark .btn {
+    width: 120px;
+    height: 30px;
+  }
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsDark .btn a::before,
+  .wrapper .measurers .measurersBox .measurersCol .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 30px;
+  }
+  .wrapper .measurers .measurersBox .measurersImg {
+    height: 30vh;
+  }
+  .wrapper .measurers .measurersBox .measurersImg img {
+    max-width: 100%;
+    width: auto\9;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  .wrapper .designersCard .designersBox .designersColumn {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow {
+    height: 10rem;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow .col {
+    height: 10rem;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow .col .left {
+    width: 50%;
+  }
+  .wrapper .catalog .catalogBox .divParallax .parallaxRow .col .right {
+    width: 70%;
+  }
+  .wrapper .comments .commentsField #commentsArea {
+    overflow-y: scroll;
+  }
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn {
+    width: 90%;
+    height: 30px;
+  }
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn a::before,
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsLight .btn a::after {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 30px;
+  }
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn {
+    width: 90%;
+    height: 30px;
+  }
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn a::before,
+  .wrapper .comments .commentsField #commentsForm .commentsButt .contents.contentsDark .btn a::after {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 30px;
+  }
+  .wrapper .contactMaps .contactMapsRow .contactCol .contactBox .contactRow .contactRowCol .contactIcon img {
+    width: 25px;
+    height: 25px;
+  }
+  .wrapper .contactMaps .contactMapsRow .mapsCol .maps {
+    width: 100%;
+    height: 30vh;
+  }
+  .wrapper .contactMaps .contactMapsRow .mapsCol .maps iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper .newMail .newMailRow .newMailCol .newMailBtn {
+    width: 40%;
+    margin: auto;
+  }
+  .wrapper .newMail .newMailRow .newMailCol .newMailBtn img {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow {
+    width: 32px;
+    height: 32px;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow .footerArrow1 {
+    width: 8px;
+    height: 8px;
+  }
+  .wrapper .homeUp .footerArrowPosition .footerArrow .footerArrow2 {
+    width: 11px;
+    height: 11px;
+  }
+}

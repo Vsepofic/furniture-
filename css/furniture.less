@@ -1,0 +1,3955 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif&display=swap");
+
+@color-link: rgb(25, 25, 25);
+@color-link2: rgb(250, 250, 250);
+@color-hover: rgb(125, 125, 125);
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  // height: 100%;
+  cursor: default;
+  // user-select: none;
+}
+.textN {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+.textB {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+}
+.textT {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.hrDanger {
+  width: 90%;
+  height: 1px;
+  background-color: red;
+  // border: 1px solid red;
+}
+.bgLight {
+  background-color: rgb(250, 250, 250);
+}
+.bgDark {
+  background-color: rgb(50, 50, 50);
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  & .topContact {
+    & .topContactRow {
+      & .topContactBrand {
+        & .topContactImg {
+          // width: 100%;
+          // height: 50px;
+          & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      & .topContactInfo {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+        & .topContactIcon {
+          box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+          transition: 0.3s ease-in-out;
+          overflow: hidden;
+          border-radius: 10px;
+          border: 1px;
+          & img {
+            width: 25px;
+            height: 25px;
+          }
+        }
+        & .topContactIcon:hover {
+          box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+          transition: 0.3s ease-in-out;
+        }
+        & .topLink {
+          position: relative;
+          & a {
+            // color: @color-link;
+          }
+          & span {
+            position: relative;
+            display: inline-block;
+            transition: 0.3s ease-in-out;
+            &:after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              width: 0%;
+              height: 1px;
+              background-color: @color-link;
+              bottom: 0;
+              transition: 0.3s ease-in-out;
+            }
+          }
+          & :hover {
+            // color: @color-hover;
+            span:after {
+              left: 0;
+              width: 100%;
+              background-color: @color-hover;
+            }
+          }
+        }
+        & .infoCol {
+          & .specImg {
+            & img {
+              margin-right: 5px;
+              width: 25px;
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+  & .menuNavbar {
+    z-index: 9;
+    & .navbar {
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out;
+      border-radius: 5px;
+      & .navbarBox {
+        & .collapse {
+          & ul {
+            & .nav-item {
+              & img {
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+              }
+            }
+            & select {
+              height: 30px;
+              font-size: 13px;
+            }
+          }
+          & form {
+            position: relative;
+            & input {
+              height: 30px;
+              font-size: 13px;
+            }
+            & button {
+              height: 30px;
+              font-size: 13px;
+            }
+            & .navElastic {
+              position: absolute;
+              top: 45px;
+              left: 0px;
+              // background-color: burlywood;
+              max-width: 200px;
+              max-height: 200px;
+              overflow: hidden;
+              & .elastic {
+                & p {
+                  margin: 0px;
+                  padding: 5px 10px 0;
+                  color: rgb(0, 0, 0);
+                  transition: 0.3s ease-in-out;
+                }
+                & p:hover {
+                  background-color: rgb(235, 235, 235);
+                  transition: 0.3s ease-in-out;
+                }
+                & p.hide {
+                  display: none;
+                }
+              }
+              & mark {
+                background-color: rgb(250, 200, 150);
+              }
+            }
+          }
+        }
+      }
+    }
+    & .navbar:hover {
+      box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out;
+    }
+  }
+  & .carouselBox {
+    & .carouselSlide {
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out;
+      border-radius: 5px;
+      & .carousel-inner {
+        & .carousel-item {
+          height: 40vw;
+          & .carouselImg {
+            width: 100%;
+            height: 40vw;
+            & img {
+              max-width: 100%;
+              width: auto\9;
+              height: 40vw;
+              object-fit: cover;
+              object-position: center;
+              border-radius: 5px;
+            }
+          }
+          & .carousel-caption {
+            & .textCarousel {
+              text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            }
+          }
+        }
+      }
+      & .carousel-control-prev {
+        justify-content: start;
+      }
+      & .carousel-control-next {
+        justify-content: end;
+      }
+    }
+    & .carouselSlide:hover {
+      box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out;
+    }
+  }
+  & .service {
+    & .servInfo {
+      & .servInfoItem {
+        min-height: 100%;
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+        & .servInfoText {
+          flex: 1 1 auto;
+        }
+      }
+    }
+  }
+  & .steps {
+    & .stepsRow {
+      & .stepsRowCol {
+        & .stepsCircle {
+          position: relative;
+          & .stepsColumn {
+            position: relative;
+            & .stepItem {
+              width: 75px;
+              height: 75px;
+              position: relative;
+              box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+              transition: 0.3s ease-in-out;
+              & .stepNumber {
+                position: absolute;
+                top: 35%;
+                left: 40%;
+                z-index: 1;
+                font-size: 30px;
+              }
+            }
+            & .stepItem:hover {
+              box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+              transition: 0.3s ease-in-out;
+            }
+          }
+          & .stepsBorder {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            width: 80%;
+          }
+          & .stepsBorder:hover {
+          }
+        }
+        & .stepsInfo {
+          & .stepsInfoColumn {
+            min-height: 100%;
+            border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1
+              100%;
+            & .stepsInfoTitle {
+              flex: 1 1 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  & .menuImg {
+    & .menuImgBox {
+      & .contents {
+      }
+      & .cardItem {
+        padding: 0;
+        height: auto;
+        position: relative;
+        & .cardImg {
+          width: 100%;
+          height: 250px;
+          // overflow: hidden;
+          & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+            transition: 0.3s ease-in-out;
+          }
+          & img:hover {
+            box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+            transition: 0.3s ease-in-out;
+          }
+          & .cardBody {
+            // text-align: center;
+          }
+        }
+      }
+    }
+  }
+  & #goUp {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 25;
+  }
+  & .homeUp {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+    & .footerArrowPosition {
+      // position: fixed;
+      // bottom: 50px;
+      // right: 20px;
+      color: gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // z-index: 25;
+      & .footerArrow {
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid gray;
+        border-radius: 50%;
+        animation: footer-arrow 2s ease-out 1s infinite alternate;
+        & .footerArrow1 {
+          margin-top: auto;
+          width: 15px;
+          height: 15px;
+          border-right: 2px solid gray;
+          border-bottom: 2px solid gray;
+          transform: rotate(225deg);
+        }
+        & .footerArrow2 {
+          width: 20px;
+          height: 20px;
+          border-right: 3px solid gray;
+          border-bottom: 3px solid gray;
+          transform: rotate(225deg);
+        }
+      }
+      & .footerText {
+        animation: footer-text 2s ease-out 1s infinite alternate;
+      }
+    }
+    @keyframes footer-arrow {
+      0% {
+        transform: scale(1);
+        opacity: 0.7;
+      }
+      100% {
+        transform: scale(1.1);
+        opacity: 0.2;
+      }
+    }
+    @keyframes footer-text {
+      0% {
+        opacity: 0.2;
+      }
+      100% {
+        opacity: 0.7;
+      }
+    }
+    &_hide {
+      opacity: 0;
+      transform: translateX(150px);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  & .timeCost {
+    & .timeCostRow {
+      display: flex;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out;
+      border-radius: 5px;
+      & .timeCostCol1 {
+        width: 90%;
+        margin-left: 5%;
+        & .timeCostText {
+          width: 80%;
+        }
+      }
+      & .timeCostCol2 {
+        width: 80%;
+        margin-left: 5%;
+        position: relative;
+        & .timeCostCol {
+          & a {
+            width: 70%;
+            & .timeCostItem {
+              & .timeCostIcon {
+                & img {
+                  width: 25px;
+                  height: 25px;
+                }
+              }
+            }
+          }
+          & a:hover {
+            // background-color: hotpink;
+          }
+        }
+        & .timeCostArow2 {
+          position: absolute;
+          bottom: 15%;
+          left: -30%;
+          transform: rotate(40deg);
+          & img {
+            width: 150px;
+          }
+        }
+      }
+    }
+    & .timeCostRow:hover {
+      box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out;
+    }
+  }
+  & .measurers {
+    & .measurersBox {
+      & .measurersCol {
+        & .contents {
+          // обязательный адаптив
+          // & .btn {
+          //   position: relative;
+          //   width: 180px;
+          //   height: 40px;
+          //   margin: 0 auto;
+          //   line-height: 40px;
+          //   text-align: center;
+          // }
+          // & .btn:active {
+          //   border: 1px solid rgb(200, 200, 200);
+          //   border-radius: 5px;
+          // }
+          // & .btn::before {
+          //   content: "";
+          //   position: absolute;
+          //   top: -100px;
+          //   left: 0;
+          //   right: 0;
+          //   width: 1px;
+          //   height: 80px;
+          //   margin: auto;
+          //   background: #000;
+          //   visibility: hidden;
+          //   opacity: 0;
+          // }
+
+          // & .btn:hover::before {
+          //   animation: sword 0.6s;
+          // }
+
+          // @keyframes sword {
+          //   0% {
+          //     top: -100px;
+          //     visibility: hidden;
+          //     opacity: 0;
+          //   }
+          //   20% {
+          //     visibility: visible;
+          //     opacity: 1;
+          //   }
+          //   100% {
+          //     top: 100px;
+          //     visibility: hidden;
+          //     opacity: 0;
+          //   }
+          // }
+
+          // & .btn a {
+          //   display: block;
+          //   color: #000;
+          //   // font-size: 16px;
+          //   text-decoration: none;
+          // }
+
+          // & .btn a::before,
+          // & .btn a::after {
+          //   content: "";
+          //   position: absolute;
+          //   top: 0;
+          //   width: 90px;
+          //   height: 35px;
+          //   border-top: 1px solid #000;
+          //   border-bottom: 1px solid #000;
+          //   transition: all 0.5s 0s;
+          // }
+
+          // & .btn a::before {
+          //   left: 0;
+          //   border-left: 1px solid #000;
+          //   border-radius: 5px 0 0 5px;
+          // }
+
+          // & .btn a::after {
+          //   right: 0;
+          //   border-right: 1px solid #000;
+          //   border-radius: 0 5px 5px 0;
+          // }
+
+          // & .btn a:hover::before {
+          //   left: -20px;
+          //   transition: all 0.5s 0.2s;
+          //   opacity: 0;
+          // }
+
+          // & .btn a:hover::after {
+          //   right: -20px;
+          //   transition: all 0.5s 0.2s;
+          //   opacity: 0;
+          // }
+        }
+        & .measurersRow {
+          & .measurersRowCol {
+            min-height: 100%;
+            border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1
+              100%;
+            & .measurersText {
+              flex: 1 1 auto;
+            }
+          }
+        }
+        & .measurersImg {
+          // width: 100%;
+          height: 40vh;
+          & img {
+            clip-path: polygon(
+              0 34%,
+              12% 5%,
+              44% 20%,
+              85% 0%,
+              100% 21%,
+              88% 47%,
+              100% 72%,
+              100% 100%,
+              65% 100%,
+              56% 90%,
+              25% 95%,
+              0% 85%
+            );
+            max-width: 100%;
+            width: auto\9;
+            height: 40vh;
+            object-fit: cover;
+            object-position: center;
+            transition: ease 1s;
+          }
+          & img:hover {
+            transform: scale(1.1);
+            transition: ease 1s;
+          }
+        }
+      }
+    }
+  }
+  & .designers {
+    & .designersBox {
+      & .designersCol {
+        & .designersImg {
+          height: 40vh;
+          & img {
+            clip-path: polygon(
+              0 5%,
+              23% 18%,
+              45% 7%,
+              83% 7%,
+              100% 0,
+              94% 34%,
+              100% 71%,
+              100% 100%,
+              53% 86%,
+              19% 100%,
+              9% 73%,
+              4% 53%
+            );
+            max-width: 100%;
+            width: auto\9;
+            height: 40vh;
+            object-fit: cover;
+            object-position: center;
+            transition: ease 1s;
+          }
+          & img:hover {
+            transform: scale(1.1);
+            transition: ease 1s;
+          }
+        }
+        & .designersRow {
+          & .designersRowCol {
+            & .designersRow2 {
+              & .designersRowCol2 {
+                min-height: 100%;
+                & .designersText {
+                  flex: 1 1 auto;
+                  // padding: 15px;
+                  border-width: 2px;
+                  border-style: solid;
+                  border-image: linear-gradient(
+                      to bottom,
+                      red,
+                      rgba(0, 0, 0, 0)
+                    )
+                    1 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  & .designersCard {
+    & .designersBox {
+      & .designersColumn {
+        & .cardItem {
+          box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+          transition: 0.3s ease-in-out;
+          min-height: 100%;
+          & .contents {
+            // обязательный адаптив
+            // & .btn {
+            //   position: relative;
+            //   width: 180px;
+            //   height: 40px;
+            //   margin: 0 auto;
+            //   line-height: 40px;
+            //   text-align: center;
+            // }
+            // & .btn:active {
+            //   border: 1px solid rgb(200, 200, 200);
+            //   border-radius: 5px;
+            // }
+            // & .btn::before {
+            //   content: "";
+            //   position: absolute;
+            //   top: -100px;
+            //   left: 0;
+            //   right: 0;
+            //   width: 1px;
+            //   height: 80px;
+            //   margin: auto;
+            //   background: #000;
+            //   visibility: hidden;
+            //   opacity: 0;
+            // }
+
+            // & .btn:hover::before {
+            //   animation: sword 0.6s;
+            // }
+
+            // @keyframes sword {
+            //   0% {
+            //     top: -100px;
+            //     visibility: hidden;
+            //     opacity: 0;
+            //   }
+            //   20% {
+            //     visibility: visible;
+            //     opacity: 1;
+            //   }
+            //   100% {
+            //     top: 100px;
+            //     visibility: hidden;
+            //     opacity: 0;
+            //   }
+            // }
+
+            // & .btn a {
+            //   display: block;
+            //   color: #000;
+            //   // font-size: 16px;
+            //   text-decoration: none;
+            // }
+
+            // & .btn a::before,
+            // & .btn a::after {
+            //   content: "";
+            //   position: absolute;
+            //   top: 0;
+            //   width: 90px;
+            //   height: 35px;
+            //   border-top: 1px solid #000;
+            //   border-bottom: 1px solid #000;
+            //   transition: all 0.5s 0s;
+            // }
+
+            // & .btn a::before {
+            //   left: 0;
+            //   border-left: 1px solid #000;
+            //   border-radius: 5px 0 0 5px;
+            // }
+
+            // & .btn a::after {
+            //   right: 0;
+            //   border-right: 1px solid #000;
+            //   border-radius: 0 5px 5px 0;
+            // }
+
+            // & .btn a:hover::before {
+            //   left: -20px;
+            //   transition: all 0.5s 0.2s;
+            //   opacity: 0;
+            // }
+
+            // & .btn a:hover::after {
+            //   right: -20px;
+            //   transition: all 0.5s 0.2s;
+            //   opacity: 0;
+            // }
+          }
+          & .cardImg {
+            width: 100%;
+            // height: 400px;
+            height: auto;
+            & img {
+              width: 250px;
+              height: 250px;
+              // object-fit: cover;
+              max-width: 100%;
+              // width: auto\9;
+              // height: 40vh;
+              object-fit: cover;
+              object-position: center;
+              box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+              transition: 0.3s ease-in-out;
+            }
+            & img:hover {
+              box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+              transition: 0.3s ease-in-out;
+            }
+          }
+          & .cardName {
+            // flex: 1 1 auto;
+          }
+        }
+        & .cardItem:hover {
+          box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+  & .drawing {
+    & .drawingBox {
+      & .drawingCol {
+        position: relative;
+        & .drawingText {
+          border-width: 2px;
+          border-style: solid;
+          border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+        }
+        & .drawingImg {
+          // position: absolute;
+          // top: 20%;
+          // left: 0%;
+          // z-index: 5;
+          // height: 30vh;
+          // transform: rotate(10deg);
+          & img {
+            width: 100%;
+
+            transition: ease 1s;
+          }
+          & img:hover {
+            transform: scale(1.1);
+            transition: ease 1s;
+          }
+        }
+        & form {
+          & .file {
+            & .filePreview {
+              display: inline-block;
+              max-width: 200px;
+              padding: 10px 0px 0px 0px;
+              & img {
+                max-width: 100%;
+              }
+            }
+          }
+        }
+        & .formBody {
+          position: relative;
+          & .formItem {
+            & .formInput {
+              height: 30px;
+              padding: 0 20px;
+              border-radius: 5px;
+              width: 100%;
+              transition: all 0.5s ease 0s;
+            }
+            & .formInput:focus {
+              box-shadow: 0 0 10px rgb(220, 220, 220);
+            }
+            & .formInput.error {
+              box-shadow: 0 0 10px red;
+            }
+            & .formLabel {
+            }
+            & .file {
+              & .fileItem {
+                position: relative;
+                & .fileInput {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  opacity: 0;
+                  font-size: 0;
+                  cursor: pointer;
+                }
+                & .fileBtn {
+                  // display: inline-flex;
+                  // min-height: 40px;
+                  // border-radius: 5px;
+                  // justify-content: center;
+                  // align-items: center;
+                  // background-color: red;
+                  // color: white;
+                  // padding: 0px 20px;
+                }
+              }
+              & .filePreview {
+                display: inline-block;
+                max-width: 200px;
+                padding: 10px 0px 0px 0px;
+                & img {
+                  max-width: 100%;
+                }
+              }
+            }
+            & .checkbox {
+              & .checkboxInput {
+                display: none;
+              }
+              & .checkboxInput:checked + .checkboxLabel::after {
+                transform: scale(1);
+              }
+              & .checkboxLabel {
+                font-size: 16px;
+                line-height: 140%;
+                display: inline-flex;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+              }
+              & .checkboxLabel::before {
+                content: "";
+                align-self: flex-start;
+                flex: 0 0 20px;
+                height: 20px;
+                background-color: white;
+                border-radius: 4px;
+                margin: 0px 10px 0px 0px;
+              }
+              & .checkboxLabel::after {
+                transition: transform 0.3s ease 0s;
+                content: "";
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                top: 3px;
+                left: 3px;
+                background-color: rgb(0, 100, 0);
+                border-radius: 4px;
+                transform: scale(0);
+              }
+            }
+            // не работает
+            & .checkbox.error .checkboxLabel::before {
+              box-shadow: 0 0 10px red;
+            }
+          }
+          & .formCheck {
+            // & .checkbox {
+            //   & .checkboxInput {
+            //     display: none;
+            //   }
+            //   & .checkboxInput:checked + .checkboxLabel::after {
+            //     transform: scale(1);
+            //   }
+            //   & .checkboxLabel {
+            //     font-size: 16px;
+            //     line-height: 140%;
+            //     display: inline-flex;
+            //     align-items: center;
+            //     position: relative;
+            //     cursor: pointer;
+            //   }
+            //   & .checkboxLabel::before {
+            //     content: "";
+            //     align-self: flex-start;
+            //     flex: 0 0 20px;
+            //     height: 20px;
+            //     background-color: white;
+            //     border-radius: 4px;
+            //     margin: 0px 10px 0px 0px;
+            //   }
+            //   & .checkboxLabel::after {
+            //     transition: transform 0.3s ease 0s;
+            //     content: "";
+            //     width: 14px;
+            //     height: 14px;
+            //     position: absolute;
+            //     top: 3px;
+            //     left: 3px;
+            //     background-color: rgb(0, 100, 0);
+            //     border-radius: 4px;
+            //     transform: scale(0);
+            //   }
+            // }
+            // & .checkbox.error .checkboxLabel::before {
+            //   box-shadow: 0 0 10px red;
+            // }
+          }
+        }
+        & .formBody::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(50, 50, 50, 0.5)
+            url("../img/furnitureIcons/load.gif") center / 50px no-repeat;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.5s ease 0s;
+        }
+        & .formBody.sending::after {
+          opacity: 1;
+          visibility: visible;
+        }
+        & .drawingPostLink {
+          width: 100%;
+          position: relative;
+          & a {
+            // color: @color-link;
+          }
+          & span {
+            position: relative;
+            display: inline-block;
+            transition: 0.3s ease-in-out;
+            &:after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              width: 0%;
+              height: 1px;
+              background-color: @color-link;
+              bottom: 0;
+              transition: 0.3s ease-in-out;
+            }
+          }
+          & :hover {
+            color: @color-hover;
+            span:after {
+              left: 0;
+              width: 100%;
+              background-color: @color-hover;
+            }
+          }
+        }
+        & .drawingPost {
+          position: relative;
+          & .drawingPostCol {
+            & a {
+              width: 100%;
+              & .drawingPostItem {
+                & .drawingPostIcon {
+                  & img {
+                    width: 25px;
+                    height: 25px;
+                  }
+                }
+              }
+            }
+            & a:hover {
+              // background-color: hotpink;
+            }
+          }
+          & .drawingPostArow {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            transform: rotate(250deg);
+            & img {
+              width: 100px;
+            }
+          }
+        }
+      }
+      & .colShadow {
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+        transition: 0.3s ease-in-out;
+        border-radius: 5px;
+      }
+      & .colShadow:hover {
+        box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+  & .masters {
+    & .mastersBox {
+      & .mastersCol {
+        & .mastersRow {
+          & .mastersRowCol {
+            min-height: 100%;
+            border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1
+              100%;
+            & .mastersText {
+              flex: 1 1 auto;
+            }
+          }
+        }
+        & .divParalax {
+          & .col {
+            & .simpleParallax {
+              & img {
+              }
+            }
+          }
+        }
+        & .mastersIMG {
+          // width: 100%;
+          height: 40vh;
+          & img {
+            clip-path: polygon(
+              0 20%,
+              25% 0,
+              49% 15%,
+              72% 0,
+              100% 0,
+              94% 34%,
+              100% 80%,
+              80% 100%,
+              65% 83%,
+              19% 100%,
+              0 82%,
+              16% 59%
+            );
+            max-width: 100%;
+            width: auto\9;
+            height: 40vh;
+            object-fit: cover;
+            object-position: center;
+            transition: ease 1s;
+          }
+          & img:hover {
+            transform: scale(1.1);
+            transition: ease 1s;
+          }
+        }
+      }
+    }
+  }
+  & .catalog {
+    & .catalogBox {
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out;
+      border-radius: 5px;
+      & .contents.contentsLight {
+        // обязательный адаптив
+        & .btn {
+          position: relative;
+          width: 200px;
+          height: 40px;
+          margin: 0 auto;
+          line-height: 40px;
+          text-align: center;
+        }
+        & .btn:active {
+          border: 1px solid rgb(200, 200, 200);
+          border-radius: 5px;
+        }
+        & .btn::before {
+          content: "";
+          position: absolute;
+          top: -100px;
+          left: 0;
+          right: 0;
+          width: 1px;
+          height: 80px;
+          margin: auto;
+          background: #000;
+          visibility: hidden;
+          opacity: 0;
+        }
+
+        & .btn:hover::before {
+          animation: sword 0.6s;
+        }
+
+        @keyframes sword {
+          0% {
+            top: -100px;
+            visibility: hidden;
+            opacity: 0;
+          }
+          20% {
+            visibility: visible;
+            opacity: 1;
+          }
+          100% {
+            top: 100px;
+            visibility: hidden;
+            opacity: 0;
+          }
+        }
+
+        & .btn a {
+          display: block;
+          color: #000;
+          // font-size: 16px;
+          text-decoration: none;
+        }
+
+        & .btn a::before,
+        & .btn a::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          width: 100px;
+          height: 35px;
+          border-top: 1px solid #000;
+          border-bottom: 1px solid #000;
+          transition: all 0.5s 0s;
+        }
+
+        & .btn a::before {
+          left: 0;
+          border-left: 1px solid #000;
+          border-radius: 5px 0 0 5px;
+        }
+
+        & .btn a::after {
+          right: 0;
+          border-right: 1px solid #000;
+          border-radius: 0 5px 5px 0;
+        }
+
+        & .btn a:hover::before {
+          left: -20px;
+          transition: all 0.5s 0.2s;
+          opacity: 0;
+        }
+
+        & .btn a:hover::after {
+          right: -20px;
+          transition: all 0.5s 0.2s;
+          opacity: 0;
+        }
+      }
+      & .contents.contentsDark {
+        // обязательный адаптив
+        & .btn {
+          position: relative;
+          width: 200px;
+          height: 40px;
+          margin: 0 auto;
+          line-height: 40px;
+          text-align: center;
+        }
+        & .btn:active {
+          border: 1px solid rgb(200, 200, 200);
+          border-radius: 5px;
+        }
+        & .btn::before {
+          content: "";
+          position: absolute;
+          top: -100px;
+          left: 0;
+          right: 0;
+          width: 1px;
+          height: 80px;
+          margin: auto;
+          background: rgb(255, 255, 255);
+          visibility: hidden;
+          opacity: 0;
+        }
+
+        & .btn:hover::before {
+          animation: sword 0.6s;
+        }
+
+        @keyframes sword {
+          0% {
+            top: -100px;
+            visibility: hidden;
+            opacity: 0;
+          }
+          20% {
+            visibility: visible;
+            opacity: 1;
+          }
+          100% {
+            top: 100px;
+            visibility: hidden;
+            opacity: 0;
+          }
+        }
+
+        & .btn a {
+          display: block;
+          color: rgb(255, 255, 255);
+          // font-size: 16px;
+          text-decoration: none;
+        }
+
+        & .btn a::before,
+        & .btn a::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          width: 100px;
+          height: 35px;
+          border-top: 1px solid rgb(255, 255, 255);
+          border-bottom: 1px solid rgb(255, 255, 255);
+          transition: all 0.5s 0s;
+        }
+
+        & .btn a::before {
+          left: 0;
+          border-left: 1px solid rgb(255, 255, 255);
+          border-radius: 5px 0 0 5px;
+        }
+
+        & .btn a::after {
+          right: 0;
+          border-right: 1px solid rgb(255, 255, 255);
+          border-radius: 0 5px 5px 0;
+        }
+
+        & .btn a:hover::before {
+          left: -20px;
+          transition: all 0.5s 0.2s;
+          opacity: 0;
+        }
+
+        & .btn a:hover::after {
+          right: -20px;
+          transition: all 0.5s 0.2s;
+          opacity: 0;
+        }
+      }
+      & .divParallax {
+        & .parallaxRow {
+          height: 25rem;
+          & .col {
+            height: 25rem;
+            & .left {
+              width: 50%;
+            }
+            & .right {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+    & .catalogBox:hover {
+      box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out;
+    }
+  }
+  & .commentsVideo {
+    & .commentsBox {
+      & .commentsCol {
+        & .commentsRow {
+          & .commentsRowCol2 {
+            min-height: 100%;
+            border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1
+              100%;
+            & .commentsText {
+              flex: 1 1 auto;
+            }
+          }
+        }
+      }
+      & .commentsIMG {
+        & .commentsIframe {
+          box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+          transition: 0.3s ease-in-out;
+        }
+        & .commentsIframe:hover {
+          box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+  & .comments {
+    & .commentsField {
+      & #commentsArea {
+        height: 30vh;
+        overflow-y: scroll;
+        border-radius: 5px;
+      }
+      & #commentsForm {
+        & .commentsRow2 {
+          & .commentsCol2 {
+            & input {
+              border-radius: 5px;
+            }
+            & textarea {
+              border-radius: 5px;
+            }
+          }
+        }
+        & .commentsButt {
+          & .contents.contentsLight {
+            // обязательный адаптив
+            & .btn {
+              position: relative;
+              width: 220px;
+              height: 40px;
+              margin: 0 auto;
+              line-height: 40px;
+              text-align: center;
+            }
+            & .btn:active {
+              border: 1px solid rgb(200, 200, 200);
+              border-radius: 5px;
+            }
+            & .btn::before {
+              content: "";
+              position: absolute;
+              top: -100px;
+              left: 0;
+              right: 0;
+              width: 1px;
+              height: 80px;
+              margin: auto;
+              background: #000;
+              visibility: hidden;
+              opacity: 0;
+            }
+
+            & .btn:hover::before {
+              animation: sword 0.6s;
+            }
+
+            @keyframes sword {
+              0% {
+                top: -100px;
+                visibility: hidden;
+                opacity: 0;
+              }
+              20% {
+                visibility: visible;
+                opacity: 1;
+              }
+              100% {
+                top: 100px;
+                visibility: hidden;
+                opacity: 0;
+              }
+            }
+
+            & .btn a {
+              display: block;
+              color: #000;
+              // font-size: 16px;
+              text-decoration: none;
+            }
+
+            & .btn a::before,
+            & .btn a::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              width: 110px;
+              height: 35px;
+              border-top: 1px solid #000;
+              border-bottom: 1px solid #000;
+              transition: all 0.5s 0s;
+            }
+
+            & .btn a::before {
+              left: 0;
+              border-left: 1px solid #000;
+              border-radius: 5px 0 0 5px;
+            }
+
+            & .btn a::after {
+              right: 0;
+              border-right: 1px solid #000;
+              border-radius: 0 5px 5px 0;
+            }
+
+            & .btn a:hover::before {
+              left: -20px;
+              transition: all 0.5s 0.2s;
+              opacity: 0;
+            }
+
+            & .btn a:hover::after {
+              right: -20px;
+              transition: all 0.5s 0.2s;
+              opacity: 0;
+            }
+          }
+          & .contents.contentsDark {
+            // обязательный адаптив
+            & .btn {
+              position: relative;
+              width: 220px;
+              height: 40px;
+              margin: 0 auto;
+              line-height: 40px;
+              text-align: center;
+            }
+            & .btn:active {
+              border: 1px solid rgb(200, 200, 200);
+              border-radius: 5px;
+            }
+            & .btn::before {
+              content: "";
+              position: absolute;
+              top: -100px;
+              left: 0;
+              right: 0;
+              width: 1px;
+              height: 80px;
+              margin: auto;
+              background: rgb(255, 255, 255);
+              visibility: hidden;
+              opacity: 0;
+            }
+
+            & .btn:hover::before {
+              animation: sword 0.6s;
+            }
+
+            @keyframes sword {
+              0% {
+                top: -100px;
+                visibility: hidden;
+                opacity: 0;
+              }
+              20% {
+                visibility: visible;
+                opacity: 1;
+              }
+              100% {
+                top: 100px;
+                visibility: hidden;
+                opacity: 0;
+              }
+            }
+
+            & .btn a {
+              display: block;
+              color: rgb(255, 255, 255);
+              // font-size: 16px;
+              text-decoration: none;
+            }
+
+            & .btn a::before,
+            & .btn a::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              width: 110px;
+              height: 35px;
+              border-top: 1px solid rgb(255, 255, 255);
+              border-bottom: 1px solid rgb(255, 255, 255);
+              transition: all 0.5s 0s;
+            }
+
+            & .btn a::before {
+              left: 0;
+              border-left: 1px solid rgb(255, 255, 255);
+              border-radius: 5px 0 0 5px;
+            }
+
+            & .btn a::after {
+              right: 0;
+              border-right: 1px solid rgb(255, 255, 255);
+              border-radius: 0 5px 5px 0;
+            }
+
+            & .btn a:hover::before {
+              left: -20px;
+              transition: all 0.5s 0.2s;
+              opacity: 0;
+            }
+
+            & .btn a:hover::after {
+              right: -20px;
+              transition: all 0.5s 0.2s;
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  & .newMail {
+    & .newMailRow {
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out;
+      border-radius: 5px;
+      & .newMailCol {
+        & .newMailImg {
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        & .newMailText {
+          // min-height: 100%;
+          border-width: 2px;
+          border-style: solid;
+          border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+        }
+        & .newMailBtn {
+          width: 80%;
+          margin: auto;
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    & .newMailRow:hover {
+      box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out;
+    }
+  }
+  & .specialist {
+    & .specRow {
+      & .specRowCol {
+        & .specRow2 {
+          & .specRowCol2 {
+            border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1
+              100%;
+            & .specImgCol {
+              & .specImg {
+                & img {
+                  margin-right: 5px;
+                  width: 25px;
+                  height: 25px;
+                }
+              }
+              & .specLink {
+                position: relative;
+                & a {
+                  // color: @color-link;
+                }
+                & span {
+                  position: relative;
+                  display: block;
+                  transition: 0.3s ease-in-out;
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    width: 0%;
+                    height: 1px;
+                    // background-color: @color-link;
+                    bottom: 0;
+                    transition: 0.3s ease-in-out;
+                  }
+                }
+                & :hover {
+                  color: @color-hover;
+                  span:after {
+                    left: 0;
+                    width: 100%;
+                    background-color: @color-hover;
+                  }
+                }
+              }
+            }
+          }
+        }
+        & .formWrapper {
+          background-color: white;
+          box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+          transition: 0.3s ease-in-out;
+          border-radius: 5px;
+        }
+        & .formWrapper:hover {
+          box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+  & .contactMaps {
+    & .contactMapsRow {
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out;
+      border-radius: 5px;
+      & .contactCol {
+        border-radius: 5px;
+        & .contactBox {
+          width: 90%;
+          // margin-left: 10%;
+          & .contactRow {
+            & .contactRowCol {
+              border-width: 2px;
+              border-style: solid;
+              border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1
+                100%;
+              & .contactSvg {
+                position: relative;
+                & .abs1 {
+                  position: absolute;
+                  top: 25%;
+                  left: 30%;
+                }
+                & .abs2 {
+                  position: absolute;
+                  top: 20%;
+                  left: 40%;
+                }
+              }
+              & .contactIcon {
+                & img {
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+              & .contactText {
+                position: relative;
+                & a {
+                  color: @color-link2;
+                }
+                & span {
+                  position: relative;
+                  display: block;
+                  transition: 0.3s ease-in-out;
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    width: 0%;
+                    height: 1px;
+                    background-color: @color-link2;
+                    bottom: 0;
+                    transition: 0.3s ease-in-out;
+                  }
+                }
+                & :hover {
+                  color: @color-hover;
+                  span:after {
+                    left: 0;
+                    width: 100%;
+                    background-color: @color-hover;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      & .mapsCol {
+        border-radius: 5px;
+        & .maps {
+          width: 100%;
+          height: 50vh;
+          & iframe {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    & .contactMapsRow:hover {
+      box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease-in-out;
+    }
+  }
+  & .footer {
+    & .footerWrapper {
+      & .footerRow {
+        & .footerBrand {
+          & .footerImg {
+            // width: 100%;
+            // height: 50px;
+            & img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+        & .footerInfo {
+          border-width: 2px;
+          border-style: solid;
+          border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+          & .footerText {
+            position: relative;
+            & a {
+              color: @color-link2;
+            }
+            & span {
+              position: relative;
+              display: inline-block;
+              transition: 0.3s ease-in-out;
+              &:after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                width: 0%;
+                height: 1px;
+                background-color: @color-link2;
+                bottom: 0;
+                transition: 0.3s ease-in-out;
+              }
+            }
+            & :hover {
+              color: @color-hover;
+              span:after {
+                left: 0;
+                width: 100%;
+                background-color: @color-hover;
+              }
+            }
+          }
+        }
+      }
+      & .footerRow2 {
+        & .footerInfo {
+          border-width: 2px;
+          border-style: solid;
+          border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+        }
+      }
+    }
+  }
+  //* светлая тема кнопки contents
+  & .contentsLight {
+    // обязательный адаптив
+    & .btn {
+      position: relative;
+      width: 180px;
+      height: 40px;
+      margin: 0 auto;
+      line-height: 40px;
+      text-align: center;
+    }
+    & .btn:active {
+      border: 1px solid rgb(200, 200, 200);
+      border-radius: 5px;
+    }
+    & .btn::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: 0;
+      right: 0;
+      width: 1px;
+      height: 80px;
+      margin: auto;
+      background: #000;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    & .btn:hover::before {
+      animation: sword 0.6s;
+    }
+
+    @keyframes sword {
+      0% {
+        top: -100px;
+        visibility: hidden;
+        opacity: 0;
+      }
+      20% {
+        visibility: visible;
+        opacity: 1;
+      }
+      100% {
+        top: 100px;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+
+    & .btn a {
+      display: block;
+      color: #000;
+      // font-size: 16px;
+      text-decoration: none;
+    }
+
+    & .btn a::before,
+    & .btn a::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 90px;
+      height: 35px;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      transition: all 0.5s 0s;
+    }
+
+    & .btn a::before {
+      left: 0;
+      border-left: 1px solid #000;
+      border-radius: 5px 0 0 5px;
+    }
+
+    & .btn a::after {
+      right: 0;
+      border-right: 1px solid #000;
+      border-radius: 0 5px 5px 0;
+    }
+
+    & .btn a:hover::before {
+      left: -20px;
+      transition: all 0.5s 0.2s;
+      opacity: 0;
+    }
+
+    & .btn a:hover::after {
+      right: -20px;
+      transition: all 0.5s 0.2s;
+      opacity: 0;
+    }
+  }
+  //* темная тема кнопки contents
+  & .contentsDark {
+    // обязательный адаптив
+    & .btn {
+      position: relative;
+      width: 180px;
+      height: 40px;
+      margin: 0 auto;
+      line-height: 40px;
+      text-align: center;
+    }
+    & .btn:active {
+      border: 1px solid rgb(200, 200, 200);
+      border-radius: 5px;
+    }
+    & .btn::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: 0;
+      right: 0;
+      width: 1px;
+      height: 80px;
+      margin: auto;
+      background: rgb(255, 255, 255);
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    & .btn:hover::before {
+      animation: sword 0.6s;
+    }
+
+    @keyframes sword {
+      0% {
+        top: -100px;
+        visibility: hidden;
+        opacity: 0;
+      }
+      20% {
+        visibility: visible;
+        opacity: 1;
+      }
+      100% {
+        top: 100px;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+
+    & .btn a {
+      display: block;
+      color: rgb(255, 255, 255);
+      // font-size: 16px;
+      text-decoration: none;
+    }
+
+    & .btn a::before,
+    & .btn a::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 90px;
+      height: 35px;
+      border-top: 1px solid rgb(255, 255, 255);
+      border-bottom: 1px solid rgb(255, 255, 255);
+      transition: all 0.5s 0s;
+    }
+
+    & .btn a::before {
+      left: 0;
+      border-left: 1px solid rgb(255, 255, 255);
+      border-radius: 5px 0 0 5px;
+    }
+
+    & .btn a::after {
+      right: 0;
+      border-right: 1px solid rgb(255, 255, 255);
+      border-radius: 0 5px 5px 0;
+    }
+
+    & .btn a:hover::before {
+      left: -20px;
+      transition: all 0.5s 0.2s;
+      opacity: 0;
+    }
+
+    & .btn a:hover::after {
+      right: -20px;
+      transition: all 0.5s 0.2s;
+      opacity: 0;
+    }
+  }
+  //* анимация при скроле
+  & .animBox.animScroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+  }
+  & .animBox.animScroll.elementShow {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
+  }
+  & .animBlock.animScroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+  }
+  & .animBlock.animScroll.elementShow {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
+  }
+  & .animBlock.animScroll:nth-of-type(2).elementShow {
+    transition-delay: 0.25s;
+  }
+  & .animBlock.animScroll:nth-of-type(3).elementShow {
+    transition-delay: 0.5s;
+  }
+  & .animBlock.animScroll:nth-of-type(4).elementShow {
+    transition-delay: 0.75s;
+  }
+  & .title.animScroll {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease-in-out;
+  }
+  & .title.animScroll.elementShow {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+  }
+  & .cardImg.animScroll {
+    opacity: 0;
+    transform: rotate(-5deg) scale(0.95);
+    transition: all 1s ease-in-out;
+  }
+  & .cardImg.animScroll.elementShow {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+    transition: all 1s ease-in-out;
+  }
+  & .animCol1.animScroll {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease-in-out;
+  }
+  & .animCol1.animScroll.elementShow {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+  }
+  & .animCol2.animScroll {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease-in-out;
+  }
+  & .animCol2.animScroll.elementShow {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+  }
+
+  //? прелоадер */
+  & .preloaderBox {
+    & .preloader {
+      position: fixed;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      background-color: rgb(25, 25, 25);
+      opacity: 0.9;
+      z-index: 10;
+      & .preloaderImg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        margin-top: -100px;
+        margin-left: -100px;
+        // background: url("../img/prel.gif") no-repeat 50% 50%;
+        // background-size: 200px;
+        & .battonFreedomBtn {
+          & .freedomBtn {
+            position: relative;
+            display: inline-block;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-decoration: none;
+            & .freedomBtnText {
+              position: relative;
+              height: 60px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0px 53px;
+              font-size: 20px;
+              border-radius: 50px;
+              color: rgba(255, 255, 255, 0.5);
+              letter-spacing: 5px;
+              top: 0;
+            }
+          }
+          & .freedomBtn::before,
+          & .freedomBtn::after {
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 100px;
+            border: 2px solid red;
+            border-radius: 20px;
+            top: -20px;
+            left: 12%;
+            z-index: 1;
+            margin: 0px 0px 0px -40px;
+            transition: all 0.8s ease 0s;
+          }
+          & .freedomBtn::before {
+            animation: rotate2 6s infinite linear;
+          }
+          & .freedomBtn::after {
+            animation: rotate2 4s infinite linear;
+          }
+          & .freedomBut {
+            position: absolute;
+            display: inline-block;
+            top: 30px;
+            left: 25px;
+          }
+          & .freedomBut::before,
+          & .freedomBut::after {
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 100px;
+            border: 2px solid red;
+            border-radius: 20px;
+            z-index: 1;
+            margin: 0px 0px 0px -40px;
+            transition: all 0.8s ease 0s;
+          }
+          & .freedomBut::before {
+            animation: rotate 6s infinite linear;
+          }
+          & .freedomBut::after {
+            animation: rotate 4s infinite linear;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+//? прелоадер */
+.loaded .preloader {
+  display: none;
+}
+//? ************************************************ */
+@media only screen and (max-width: 1399px) {
+  .textN {
+    font-size: 15px;
+  }
+  .textB {
+    font-size: 19px;
+  }
+  .textT {
+    font-size: 28px;
+  }
+  .wrapper {
+    & .topContact {
+      & .topContactRow {
+        & .topContactBrand {
+          & .topContactImg {
+            & img {
+            }
+          }
+        }
+        & .topContactInfo {
+          & .topContactIcon {
+            & img {
+              width: 23px;
+              height: 23px;
+            }
+          }
+          & .infoCol {
+            & .specImg {
+              & img {
+                margin-right: 5px;
+                width: 23px;
+                height: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .themeLanguage {
+    }
+    & .menuNavbar {
+    }
+    & .carouselBox {
+      & .carouselSlide {
+        & .carouselImg {
+          & img {
+          }
+        }
+      }
+    }
+    & .service {
+      & .servInfo {
+        & .servInfoItem {
+          & .servInfoText {
+          }
+        }
+      }
+    }
+    & .steps {
+      & .stepsRow {
+        & .stepsRowCol {
+          & .stepsCircle {
+            & .stepsColumn {
+              & .stepItem {
+                & .stepNumber {
+                }
+              }
+            }
+            & .stepsBorder {
+            }
+          }
+          & .stepsInfo {
+            & .stepsInfoColumn {
+              & .stepsInfoTitle {
+              }
+            }
+          }
+        }
+      }
+    }
+    & .menuImg {
+      & .menuImgBox {
+        & .contents.contentsLight {
+          & .btn {
+            width: 170px;
+            height: 35px;
+          }
+          & .btn a::before,
+          & .btn a::after {
+            content: "";
+            position: absolute;
+            width: 85px;
+            height: 35px;
+          }
+        }
+        & .contents.contentsDark {
+          & .btn {
+            width: 170px;
+            height: 35px;
+          }
+          & .btn a::before,
+          & .btn a::after {
+            content: "";
+            position: absolute;
+            width: 85px;
+            height: 35px;
+          }
+        }
+        & .cardItem {
+          & .cardImg {
+            & img {
+            }
+            & .cardBody {
+            }
+          }
+        }
+      }
+    }
+    & .timeCost {
+      & .timeCostRow {
+        & .timeCostCol1 {
+          & .timeCostText {
+          }
+        }
+        & .timeCostCol2 {
+          & .timeCostItem {
+            & .timeCostIcon {
+              & img {
+              }
+            }
+          }
+          & .timeCostArow2 {
+            & img {
+            }
+          }
+        }
+      }
+    }
+    & .measurers {
+      & .measurersBox {
+        & .measurersCol {
+          & .contents.contentsLight {
+            & .btn {
+              width: 170px;
+              height: 35px;
+            }
+            & .btn a::before,
+            & .btn a::after {
+              content: "";
+              position: absolute;
+              width: 85px;
+              height: 35px;
+            }
+          }
+          & .contents.contentsDark {
+            & .btn {
+              width: 170px;
+              height: 35px;
+            }
+            & .btn a::before,
+            & .btn a::after {
+              content: "";
+              position: absolute;
+              width: 85px;
+              height: 35px;
+            }
+          }
+          & .measurersRow {
+            & .measurersRowCol {
+              & .measurersText {
+              }
+            }
+          }
+        }
+        & .measurersIMG {
+          & img {
+          }
+        }
+      }
+    }
+    & .designers {
+      & .designersBox {
+        & .designersIMG {
+          & img {
+          }
+        }
+        & .designersCol {
+          & .designersRow {
+            & .designersRowCol {
+              & .designersRow2 {
+                & .designersRowCol2 {
+                  & .designersText {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    & .designersCard {
+      & .designersBox {
+        & .designersColumn {
+          & .cardItem {
+            & .contents.contentsLight {
+              & .btn {
+                width: 170px;
+                height: 35px;
+              }
+              & .btn a::before,
+              & .btn a::after {
+                content: "";
+                position: absolute;
+                width: 85px;
+                height: 35px;
+              }
+            }
+            & .contents.contentsDark {
+              & .btn {
+                width: 170px;
+                height: 35px;
+              }
+              & .btn a::before,
+              & .btn a::after {
+                content: "";
+                position: absolute;
+                width: 85px;
+                height: 35px;
+              }
+            }
+            & .cardImg {
+              & img {
+              }
+            }
+            & .cardName {
+            }
+          }
+        }
+      }
+    }
+    & .drawing {
+      & .drawingBox {
+        & .drawingCol {
+          & .drawingText {
+          }
+          & .drawingImg {
+            & img {
+            }
+          }
+          & .drawingPostLink {
+          }
+          & .drawingPost {
+            & .drawingPostCol {
+              & .btn {
+                & .drawingPostItem {
+                  & .drawingPostIcon {
+                    & img {
+                    }
+                  }
+                }
+              }
+            }
+            & .drawingPostArow {
+              & img {
+              }
+            }
+          }
+        }
+      }
+    }
+    & .masters {
+      & .mastersBox {
+        & .mastersCol {
+          & .mastersRow {
+            & .mastersRowCol {
+              & .mastersText {
+              }
+            }
+          }
+        }
+        & .mastersIMG {
+          & img {
+          }
+        }
+      }
+    }
+    & .catalog {
+      & .catalogBox {
+        & .contents.contentsLight {
+          & .btn {
+          }
+          & .btn a::before,
+          & .btn a::after {
+          }
+        }
+        & .divParallax {
+          & .parallaxRow {
+            height: 20rem;
+            & .col {
+              height: 20rem;
+              & .left {
+                width: 50%;
+              }
+              & .right {
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .commentsVideo {
+      & .commentsBox {
+        & .commentsCol {
+          & .commentsRow {
+            & .commentsRowCol2 {
+              & .commentsText {
+              }
+            }
+          }
+        }
+        & .commentsIMG {
+          & .commentsIframe {
+          }
+        }
+      }
+    }
+    & .comments {
+      & .commentsField {
+        & #commentsArea {
+          overflow-y: scroll;
+        }
+        & #commentsForm {
+          & .commentsRow2 {
+            & .commentsCol2 {
+            }
+          }
+          & .commentsButt {
+          }
+        }
+      }
+    }
+    & .newMail {
+      & .newMailRow {
+        & .newMailIMG {
+          & img {
+          }
+        }
+        & .newMailCol {
+          & .newMailText {
+          }
+        }
+      }
+    }
+    & .contactMaps {
+      & .contactMapsRow {
+        & .contactCol {
+          & .contactBox {
+            & .contactRow {
+              & .contactRowCol {
+                & .contactSvg {
+                  & .abs1 {
+                  }
+                  & .abs2 {
+                  }
+                }
+                & .contactIcon {
+                  & img {
+                  }
+                }
+              }
+            }
+          }
+        }
+        & .mapsCol {
+          & .maps {
+            & iframe {
+            }
+          }
+        }
+      }
+    }
+    & .homeUp {
+      & .footerArrowPosition {
+        & .footerArrow {
+          width: 48px;
+          height: 48px;
+          & .footerArrow1 {
+            width: 14px;
+            height: 14px;
+          }
+          & .footerArrow2 {
+            width: 19px;
+            height: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .textN {
+    font-size: 14px;
+  }
+  .textB {
+    font-size: 18px;
+  }
+  .textT {
+    font-size: 26px;
+  }
+  .wrapper {
+    & .topContact {
+      & .topContactRow {
+        & .topContactBrand {
+          & .topContactImg {
+            & img {
+            }
+          }
+        }
+        & .topContactInfo {
+          & .topContactIcon {
+            & img {
+              width: 21px;
+              height: 21px;
+            }
+          }
+          & .infoCol {
+            & .specImg {
+              & img {
+                margin-right: 5px;
+                width: 21px;
+                height: 21px;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .menuImg {
+      & .menuImgBox {
+        // & .contents {
+        //   & .btn {
+        //     width: 160px;
+        //     height: 35px;
+        //   }
+        //   & .btn a::before,
+        //   & .btn a::after {
+        //     content: "";
+        //     position: absolute;
+        //     width: 80px;
+        //     height: 35px;
+        //   }
+        // }
+      }
+    }
+    & .measurers {
+      & .measurersBox {
+        & .measurersCol {
+          & .contents {
+            & .btn {
+              width: 160px;
+              height: 35px;
+            }
+            & .btn a::before,
+            & .btn a::after {
+              content: "";
+              position: absolute;
+              width: 80px;
+              height: 35px;
+            }
+          }
+          & .contents {
+            & .btn {
+              width: 170px;
+              height: 35px;
+            }
+            & .btn a::before,
+            & .btn a::after {
+              content: "";
+              position: absolute;
+              width: 85px;
+              height: 35px;
+            }
+          }
+          & .measurersRow {
+            & .measurersRowCol {
+              & .measurersText {
+              }
+            }
+          }
+        }
+        & .measurersIMG {
+          & img {
+          }
+        }
+      }
+    }
+    & .designersCard {
+      & .designersBox {
+        & .designersColumn {
+          & .cardItem {
+            & .contents.contentsLight {
+              & .btn {
+                width: 160px;
+                height: 35px;
+              }
+              & .btn a::before,
+              & .btn a::after {
+                content: "";
+                position: absolute;
+                width: 80px;
+                height: 35px;
+              }
+            }
+            & .contents.contentsDark {
+              & .btn {
+                width: 160px;
+                height: 35px;
+              }
+              & .btn a::before,
+              & .btn a::after {
+                content: "";
+                position: absolute;
+                width: 80px;
+                height: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .catalog {
+      & .catalogBox {
+        & .contents {
+          & .btn {
+          }
+          & .btn a::before,
+          & .btn a::after {
+          }
+        }
+      }
+    }
+    & .comments {
+      & .commentsField {
+        & #commentsArea {
+          overflow-y: scroll;
+        }
+        & #commentsForm {
+          & .commentsRow2 {
+            & .commentsCol2 {
+            }
+          }
+          & .commentsButt {
+          }
+        }
+      }
+    }
+    & .homeUp {
+      & .footerArrowPosition {
+        & .footerArrow {
+          width: 45px;
+          height: 45px;
+          & .footerArrow1 {
+            width: 13px;
+            height: 13px;
+          }
+          & .footerArrow2 {
+            width: 17px;
+            height: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .textN {
+    font-size: 13px;
+  }
+  .textB {
+    font-size: 16px;
+  }
+  .textT {
+    font-size: 24px;
+  }
+
+  .wrapper {
+    & .topContact {
+      & .topContactRow {
+        & .topContactBrand {
+          & .topContactImg {
+            & img {
+            }
+          }
+        }
+        & .topContactInfo {
+          & .topContactIcon {
+            & img {
+              width: 18px;
+              height: 18px;
+            }
+          }
+          & .infoCol {
+            & .specImg {
+              & img {
+                margin-right: 5px;
+                width: 18px;
+                height: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .themeLanguage {
+    }
+    & .menuNavbar {
+    }
+    & .carouselBox {
+      & .carouselSlide {
+        & .carouselImg {
+          & img {
+          }
+        }
+      }
+    }
+    & .service {
+      & .servInfo {
+        & .servInfoItem {
+          & .servInfoText {
+          }
+        }
+      }
+    }
+    & .steps {
+      & .stepsRow {
+        & .stepsRowCol {
+          & .stepsCircle {
+            position: relative;
+            height: 100%;
+            & .stepsColumn {
+              position: relative;
+              & .stepItem {
+                width: 50px;
+                height: 50px;
+                position: relative;
+                & .stepNumber {
+                  position: absolute;
+                  top: 30%;
+                  left: 42%;
+                  z-index: 1;
+                  font-size: 20px;
+                }
+              }
+            }
+            & .stepsBorder {
+              position: absolute;
+              top: 10%;
+              left: 49%;
+              height: 80%;
+            }
+          }
+          & .stepsInfo {
+            & .stepsInfoColumn {
+              & .stepsInfoTitle {
+              }
+            }
+          }
+        }
+      }
+    }
+    & .menuImg {
+      & .menuImgBox {
+        & .contents.contentsLight {
+          & .btn {
+            width: 160px;
+            height: 30px;
+          }
+          & .btn a::before,
+          & .btn a::after {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 30px;
+          }
+        }
+        & .contents.contentsDark {
+          & .btn {
+            width: 160px;
+            height: 30px;
+          }
+          & .btn a::before,
+          & .btn a::after {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 30px;
+          }
+        }
+        & .cardItem {
+          padding: 0;
+          height: auto;
+          position: relative;
+          & .cardImg {
+            width: 100%;
+            height: 225px;
+            // overflow: hidden;
+            & img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            & .cardBody {
+              // text-align: center;
+            }
+          }
+        }
+      }
+    }
+    & .timeCost {
+      & .timeCostRow {
+        display: flex;
+        flex-direction: column;
+        & .timeCostCol1 {
+          width: 90%;
+          margin-left: 5%;
+          & .timeCostText {
+            width: 80%;
+          }
+        }
+        & .timeCostCol2 {
+          width: 80%;
+          margin-left: 5%;
+          position: relative;
+          & .timeCostItem {
+            width: 50% !important;
+            margin-left: 10% !important;
+            & .timeCostIcon {
+              & img {
+                width: 27px;
+                height: 27px;
+              }
+            }
+          }
+          & .timeCostArow {
+            position: absolute;
+            top: 10%;
+            right: -5%;
+            transform: rotate(-100deg);
+            & img {
+              width: 110px;
+            }
+          }
+        }
+      }
+    }
+    & .measurers {
+      & .measurersBox {
+        & .measurersCol {
+          & .contents.contentsLight {
+            & .btn {
+              width: 150px;
+              height: 32px;
+            }
+            & .btn a::before,
+            & .btn a::after {
+              content: "";
+              position: absolute;
+              width: 75px;
+              height: 32px;
+            }
+          }
+          & .contents.contentsDark {
+            & .btn {
+              width: 150px;
+              height: 32px;
+            }
+            & .btn a::before,
+            & .btn a::after {
+              content: "";
+              position: absolute;
+              width: 75px;
+              height: 32px;
+            }
+          }
+          & .measurersRow {
+            & .measurersRowCol {
+              & .measurersText {
+              }
+            }
+          }
+        }
+        & .measurersImg {
+          height: 35vh;
+          & img {
+            max-width: 100%;
+            width: auto\9;
+            height: 35vh;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+    }
+    & .designers {
+      & .designersBox {
+        & .designersImg {
+          height: 35vh;
+          & img {
+            max-width: 100%;
+            width: auto\9;
+            height: 35vh;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        & .designersCol {
+          & .designersRow {
+            & .designersRowCol {
+              & .designersRow2 {
+                & .designersRowCol2 {
+                  & .designersText {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    & .designersCard {
+      & .designersBox {
+        & .designersColumn {
+          & .cardItem {
+            & .contents.contentsLight {
+              & .btn {
+                width: 150px;
+                height: 32px;
+              }
+              & .btn a::before,
+              & .btn a::after {
+                content: "";
+                position: absolute;
+                width: 75px;
+                height: 32px;
+              }
+            }
+            & .contents.contentsDark {
+              & .btn {
+                width: 150px;
+                height: 32px;
+              }
+              & .btn a::before,
+              & .btn a::after {
+                content: "";
+                position: absolute;
+                width: 75px;
+                height: 32px;
+              }
+            }
+            & .cardImg {
+              & img {
+              }
+            }
+            & .cardName {
+            }
+          }
+        }
+      }
+    }
+    & .drawing {
+      & .drawingBox {
+        & .drawingCol {
+          & .drawingText {
+          }
+          & .drawingImg {
+            & img {
+            }
+          }
+          & .drawingPostLink {
+          }
+          & .drawingPost {
+            & .drawingPostCol {
+              & .btn {
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .masters {
+      & .mastersBox {
+        & .mastersCol {
+          & .mastersRow {
+            & .mastersRowCol {
+              & .mastersText {
+              }
+            }
+          }
+        }
+        & .mastersIMG {
+          & img {
+          }
+        }
+      }
+    }
+    & .catalog {
+      & .catalogBox {
+        & .contents.contentsLight {
+          & .btn {
+            width: 170px;
+            height: 32px;
+          }
+          & .btn a::before,
+          & .btn a::after {
+            content: "";
+            position: absolute;
+            width: 85px;
+            height: 32px;
+          }
+        }
+        & .contents.contentsDark {
+          & .btn {
+            width: 170px;
+            height: 32px;
+          }
+          & .btn a::before,
+          & .btn a::after {
+            content: "";
+            position: absolute;
+            width: 85px;
+            height: 32px;
+          }
+        }
+        & .divParallax {
+          & .parallaxRow {
+            height: 15rem;
+            & .col {
+              height: 15rem;
+              & .left {
+                width: 50%;
+              }
+              & .right {
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .commentsVideo {
+      & .commentsBox {
+        & .commentsCol {
+          & .commentsRow {
+            & .commentsRowCol2 {
+              & .commentsText {
+              }
+            }
+          }
+        }
+        & .commentsIMG {
+          & .commentsIframe {
+          }
+        }
+      }
+    }
+    & .comments {
+      & .commentsField {
+        & #commentsArea {
+          overflow-y: scroll;
+        }
+        & #commentsForm {
+          & .commentsRow2 {
+            & .commentsCol2 {
+            }
+          }
+          & .commentsButt {
+            & .contents.contentsLight {
+              & .btn {
+                width: 190px;
+                height: 32px;
+              }
+              & .btn a::before,
+              & .btn a::after {
+                content: "";
+                position: absolute;
+                width: 95px;
+                height: 32px;
+              }
+            }
+            & .contents.contentsDark {
+              & .btn {
+                width: 190px;
+                height: 32px;
+              }
+              & .btn a::before,
+              & .btn a::after {
+                content: "";
+                position: absolute;
+                width: 95px;
+                height: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .newMail {
+      & .newMailRow {
+        & .newMailCol {
+          & .newMailIMG {
+            & img {
+            }
+          }
+          & .newMailText {
+          }
+          & .newMailBtn {
+            width: 40%;
+            margin: auto;
+            & img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+    & .contactMaps {
+      & .contactMapsRow {
+        & .contactCol {
+          width: 100%;
+          height: 35vh;
+          & .contactBox {
+            & .contactRow {
+              & .contactRowCol {
+                & .contactSvg {
+                  & .abs1 {
+                  }
+                  & .abs2 {
+                  }
+                }
+                & .contactIcon {
+                  & img {
+                  }
+                }
+              }
+            }
+          }
+        }
+        & .mapsCol {
+          & .maps {
+            width: 100%;
+            height: 35vh;
+            & iframe {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+    & .homeUp {
+      & .footerArrowPosition {
+        & .footerArrow {
+          width: 40px;
+          height: 40px;
+          & .footerArrow1 {
+            width: 12px;
+            height: 12px;
+          }
+          & .footerArrow2 {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .textN {
+    font-size: 12px;
+  }
+  .textB {
+    font-size: 14px;
+  }
+  .textT {
+    font-size: 20px;
+  }
+
+  .wrapper {
+    & .topContact {
+      & .topContactRow {
+        & .topContactBrand {
+          & .topContactImg {
+            & img {
+            }
+          }
+        }
+        & .topContactInfo {
+          & .topContactIcon {
+            & img {
+              width: 15px;
+              height: 15px;
+            }
+          }
+          & .infoCol {
+            & .specImg {
+              & img {
+                margin-right: 5px;
+                width: 15px;
+                height: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .themeLanguage {
+    }
+    & .menuNavbar {
+    }
+    & .carouselBox {
+      & .carouselSlide {
+        & .carouselImg {
+          & img {
+          }
+        }
+      }
+    }
+    & .service {
+      & .servInfo {
+        & .servInfoItem {
+          & .servInfoText {
+          }
+        }
+      }
+    }
+    & .steps {
+      & .stepsRow {
+        & .stepsRowCol {
+          & .stepsCircle {
+            position: relative;
+            height: 100%;
+            & .stepsColumn {
+              position: relative;
+              & .stepItem {
+                width: 40px;
+                height: 40px;
+                position: relative;
+                & .stepNumber {
+                  position: absolute;
+                  top: 30%;
+                  left: 40%;
+                  z-index: 1;
+                  font-size: 16px;
+                }
+              }
+            }
+            & .stepsBorder {
+              position: absolute;
+              top: 10%;
+              left: 49%;
+              // width: 1%;
+              height: 80%;
+            }
+          }
+        }
+      }
+    }
+    & .menuImg {
+      & .menuImgBox {
+        & .cardItem {
+          padding: 0;
+          height: auto;
+          position: relative;
+          & .cardImg {
+            width: 100%;
+            height: 200px;
+            // overflow: hidden;
+            & img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            & .cardBody {
+              // text-align: center;
+            }
+          }
+        }
+      }
+    }
+    & .timeCost {
+      & .timeCostRow {
+        display: flex;
+        & .timeCostCol1 {
+          width: 70%;
+          margin-left: 10%;
+          & .timeCostText {
+            width: 60%;
+          }
+        }
+        & .timeCostCol2 {
+          width: 80%;
+          margin-left: 5%;
+          position: relative;
+          & .timeCostItem {
+            width: 70% !important;
+            margin-left: 5% !important;
+            & .timeCostIcon {
+              & img {
+                width: 25px;
+                height: 25px;
+              }
+            }
+          }
+          & .timeCostArow {
+            position: absolute;
+            top: 0%;
+            right: -15%;
+            transform: rotate(-120deg);
+            & img {
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+    & .measurers {
+      & .measurersBox {
+        & .measurersCol {
+          & .contents.contentsLight {
+            & .btn {
+              width: 140px;
+              height: 30px;
+            }
+            & .btn a::before,
+            & .btn a::after {
+              content: "";
+              position: absolute;
+              width: 70px;
+              height: 30px;
+            }
+          }
+          & .contents.contentsDark {
+            & .btn {
+              width: 140px;
+              height: 30px;
+            }
+            & .btn a::before,
+            & .btn a::after {
+              content: "";
+              position: absolute;
+              width: 70px;
+              height: 30px;
+            }
+          }
+          & .measurersRow {
+            & .measurersRowCol {
+              & .measurersText {
+              }
+            }
+          }
+        }
+        & .measurersImg {
+          height: 30vh;
+          & img {
+            max-width: 100%;
+            width: auto\9;
+            height: 30vh;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+    }
+    & .designers {
+      & .designersBox {
+        & .designersImg {
+          height: 30vh;
+          & img {
+            max-width: 100%;
+            width: auto\9;
+            height: 30vh;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        & .designersCol {
+          & .designersRow {
+            & .designersRowCol {
+              & .designersRow2 {
+                & .designersRowCol2 {
+                  & .designersText {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    & .designersCard {
+      & .designersBox {
+        & .designersColumn {
+          width: 90%;
+          margin: 0 auto;
+          & .cardItem {
+            & .contents.contentsLight {
+              & .btn {
+                width: 140px;
+                height: 30px;
+              }
+              & .btn a::before,
+              & .btn a::after {
+                content: "";
+                position: absolute;
+                width: 70px;
+                height: 30px;
+              }
+            }
+          }
+          & .contents.contentsDark {
+            & .btn {
+              width: 140px;
+              height: 30px;
+            }
+            & .btn a::before,
+            & .btn a::after {
+              content: "";
+              position: absolute;
+              width: 70px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+    & .drawing {
+      & .drawingBox {
+        & .drawingCol {
+          & .drawingText {
+          }
+          & .drawingImg {
+            & img {
+            }
+          }
+          & .drawingPostLink {
+          }
+          & .drawingPost {
+            & .drawingPostCol {
+              & .btn {
+                width: 80%;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .masters {
+      & .mastersBox {
+        & .mastersCol {
+          & .mastersRow {
+            & .mastersRowCol {
+              & .mastersText {
+              }
+            }
+          }
+        }
+        & .mastersIMG {
+          & img {
+          }
+        }
+      }
+    }
+    & .catalog {
+      & .catalogBox {
+        & .contents.contentsLight {
+          & .btn {
+            width: 160px;
+            height: 30px;
+          }
+          & .btn a::before,
+          & .btn a::after {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 30px;
+          }
+        }
+        & .contents.contentsDark {
+          & .btn {
+            width: 160px;
+            height: 30px;
+          }
+          & .btn a::before,
+          & .btn a::after {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 30px;
+          }
+        }
+        & .divParallax {
+          & .parallaxRow {
+            height: 10rem;
+            & .col {
+              height: 10rem;
+              & .left {
+                width: 50%;
+              }
+              & .right {
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .commentsVideo {
+      & .commentsBox {
+        & .commentsCol {
+          & .commentsRow {
+            & .commentsRowCol2 {
+              & .commentsText {
+              }
+            }
+          }
+        }
+        & .commentsIMG {
+          & .commentsIframe {
+          }
+        }
+      }
+    }
+    & .comments {
+      & .commentsField {
+        & #commentsArea {
+          overflow-y: scroll;
+        }
+        & #commentsForm {
+          & .commentsRow2 {
+            & .commentsCol2 {
+            }
+          }
+          & .commentsButt {
+            & .contents.contentsLight {
+              & .btn {
+                width: 80%;
+                height: 30px;
+              }
+              & .btn a::before,
+              & .btn a::after {
+                content: "";
+                position: absolute;
+                width: 51%;
+                height: 30px;
+              }
+            }
+            & .contents.contentsDark {
+              & .btn {
+                width: 80%;
+                height: 30px;
+              }
+              & .btn a::before,
+              & .btn a::after {
+                content: "";
+                position: absolute;
+                width: 51%;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .newMail {
+      & .newMailRow {
+        & .newMailCol {
+          & .newMailIMG {
+            & img {
+            }
+          }
+          & .newMailText {
+          }
+          & .newMailBtn {
+            width: 40%;
+            margin: auto;
+            & img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+    & .contactMaps {
+      & .contactMapsRow {
+        & .contactCol {
+          width: 100%;
+          height: 30vh;
+          & .contactBox {
+            & .contactRow {
+              & .contactRowCol {
+                & .contactSvg {
+                  & .abs1 {
+                  }
+                  & .abs2 {
+                  }
+                }
+                & .contactIcon {
+                  & img {
+                    width: 25px;
+                    height: 25px;
+                  }
+                }
+                & .contactText {
+                  & a {
+                  }
+                  & span {
+                    &:after {
+                    }
+                  }
+                  & :hover {
+                    span:after {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        & .mapsCol {
+          & .maps {
+            width: 100%;
+            height: 30vh;
+            & iframe {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+      & .contactMapsRow:hover {
+      }
+    }
+    & .homeUp {
+      & .footerArrowPosition {
+        & .footerArrow {
+          width: 35px;
+          height: 35px;
+          & .footerArrow1 {
+            width: 10px;
+            height: 10px;
+          }
+          & .footerArrow2 {
+            width: 13px;
+            height: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .textN {
+    font-size: 11px;
+  }
+  .textB {
+    font-size: 13px;
+  }
+  .textT {
+    font-size: 18px;
+  }
+  .wrapper {
+    & .topContact {
+      & .topContactRow {
+        & .topContactBrand {
+          & .topContactImg {
+            & img {
+            }
+          }
+        }
+        & .topContactInfo {
+          & .topContactIcon {
+            & img {
+              width: 13px;
+              height: 13px;
+            }
+          }
+          & .infoCol {
+            & .specImg {
+              & img {
+                margin-right: 5px;
+                width: 13px;
+                height: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .menuImg {
+      & .menuImgBox {
+      }
+    }
+    & .measurers {
+      & .measurersBox {
+        & .measurersCol {
+          & .contents.contentsLight {
+            & .btn {
+              width: 120px;
+              height: 30px;
+            }
+            & .btn a::before,
+            & .btn a::after {
+              content: "";
+              position: absolute;
+              width: 60px;
+              height: 30px;
+            }
+          }
+          & .contents.contentsDark {
+            & .btn {
+              width: 120px;
+              height: 30px;
+            }
+            & .btn a::before,
+            & .btn a::after {
+              content: "";
+              position: absolute;
+              width: 60px;
+              height: 30px;
+            }
+          }
+          & .measurersRow {
+            & .measurersRowCol {
+              & .measurersText {
+              }
+            }
+          }
+        }
+        & .measurersImg {
+          height: 30vh;
+          & img {
+            max-width: 100%;
+            width: auto\9;
+            height: 30vh;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+    }
+    & .designersCard {
+      & .designersBox {
+        & .designersColumn {
+          width: 90%;
+          margin: 0 auto;
+          & .cardItem {
+            & .contents {
+            }
+          }
+        }
+      }
+    }
+    & .catalog {
+      & .catalogBox {
+        & .divParallax {
+          & .parallaxRow {
+            height: 10rem;
+            & .col {
+              height: 10rem;
+              & .left {
+                width: 50%;
+              }
+              & .right {
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .comments {
+      & .commentsField {
+        & #commentsArea {
+          overflow-y: scroll;
+        }
+        & #commentsForm {
+          & .commentsRow2 {
+            & .commentsCol2 {
+            }
+          }
+          & .commentsButt {
+            & .contents.contentsLight {
+              & .btn {
+                width: 90%;
+                height: 30px;
+              }
+              & .btn a::before,
+              & .btn a::after {
+                content: "";
+                position: absolute;
+                width: 55%;
+                height: 30px;
+              }
+            }
+            & .contents.contentsDark {
+              & .btn {
+                width: 90%;
+                height: 30px;
+              }
+              & .btn a::before,
+              & .btn a::after {
+                content: "";
+                position: absolute;
+                width: 55%;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .contactMaps {
+      & .contactMapsRow {
+        & .contactCol {
+          & .contactBox {
+            & .contactRow {
+              & .contactRowCol {
+                & .contactSvg {
+                  & .abs1 {
+                  }
+                  & .abs2 {
+                  }
+                }
+                & .contactIcon {
+                  & img {
+                    width: 25px;
+                    height: 25px;
+                  }
+                }
+                & .contactText {
+                  & a {
+                  }
+                  & span {
+                    &:after {
+                    }
+                  }
+                  & :hover {
+                    span:after {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        & .mapsCol {
+          & .maps {
+            width: 100%;
+            height: 30vh;
+            & iframe {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+      & .contactMapsRow:hover {
+      }
+    }
+    & .newMail {
+      & .newMailRow {
+        & .newMailCol {
+          & .newMailIMG {
+            & img {
+            }
+          }
+          & .newMailText {
+          }
+          & .newMailBtn {
+            width: 40%;
+            margin: auto;
+            & img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+    & .homeUp {
+      & .footerArrowPosition {
+        & .footerArrow {
+          width: 32px;
+          height: 32px;
+          & .footerArrow1 {
+            width: 8px;
+            height: 8px;
+          }
+          & .footerArrow2 {
+            width: 11px;
+            height: 11px;
+          }
+        }
+      }
+    }
+  }
+}

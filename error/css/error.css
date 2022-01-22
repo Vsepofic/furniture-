@@ -1,0 +1,505 @@
+html,
+body {
+  background-color: black;
+}
+.wrapper {
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+.wrapper.active {
+  opacity: 1;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxRope {
+  opacity: 1;
+  transition: all 2s ease 4s;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxGrass {
+  opacity: 1;
+  transition: all 2s ease 3.5s;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxPointer {
+  bottom: 100px;
+  transition: all 1.5s ease 4.5s;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxBtn {
+  bottom: 480px;
+  transition: all 3.5s ease 5.5s;
+  opacity: 1;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxBall1 {
+  bottom: 75px;
+  transition: all 2s ease 4.5s;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxBall2 {
+  bottom: 75px;
+  transition: all 2s ease 4.5s;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxBall3 {
+  bottom: 75px;
+  transition: all 2s ease 4.5s;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxWall {
+  bottom: -20%;
+  transition: all 1.5s ease 4s;
+  opacity: 1;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxWood1 {
+  right: -8%;
+  transition: all 1.5s ease 4s;
+  opacity: 1;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxWood2 {
+  left: -8%;
+  transition: all 1.5s ease 4s;
+  opacity: 1;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxLetter1 {
+  opacity: 1;
+  transition: all 2s ease 4s;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxLetter2 {
+  opacity: 1;
+  transition: all 2s ease 4s;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxLetter3 {
+  opacity: 1;
+  transition: all 2s ease 4s;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxLetter4 {
+  opacity: 1;
+  transition: all 2s ease 4s;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxLetter5 {
+  opacity: 1;
+  transition: all 2s ease 4s;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxLetter6 {
+  opacity: 1;
+  transition: all 2s ease 4s;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxLetter7 {
+  opacity: 1;
+  transition: all 2s ease 4s;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxLetter8 {
+  opacity: 1;
+  transition: all 2s ease 4s;
+}
+.wrapper.active .page .parallax .parallaxList li .parallaxLetter9 {
+  opacity: 1;
+  transition: all 2s ease 4s;
+}
+.wrapper .page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+}
+.wrapper .page .parallax {
+  flex: 1 0 100%;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper .page .parallax .parallaxList {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.wrapper .page .parallax .parallaxList li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.wrapper .page .parallax .parallaxList li .parallaxBg {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+  background: url("../img/небо2-min\ \(1\).png") 50% 100% / cover no-repeat;
+}
+.wrapper .page .parallax .parallaxList li .parallaxWall {
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  bottom: -100%;
+  left: -5%;
+  opacity: 0;
+  background: url("../img/стена-min.png") 50% 100% / cover no-repeat;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope {
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  opacity: 0;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement {
+  position: absolute;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement span {
+  display: inline-block;
+  transform-origin: 50% 0;
+  width: 280px;
+  height: 280px;
+  margin: 0px 0px 0px -140px;
+  animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement1 {
+  top: 28%;
+  left: 20%;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement1 span {
+  background: url("../img2/clouds/board-cloud-2.png") 0 0% no-repeat;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement2 {
+  top: 50%;
+  left: 65%;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement2 span {
+  background: url("../img2/clouds/board-cloud-3.png") 0 0% no-repeat;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement3 {
+  top: 30%;
+  left: 75%;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement3 span {
+  background: url("../img2/clouds/board-birds.png") 0 0% no-repeat;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement4 {
+  top: 19%;
+  left: 11%;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement4 span {
+  background: url("../img2/clouds/board-cloud-1.png") 0 0% no-repeat;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement5 {
+  top: 56%;
+  left: 40%;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement5 span {
+  background: url("../img2/clouds/board-cloud-4.png") 0 0% no-repeat;
+  animation: swing2 2.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement6 {
+  top: 59%;
+  left: 30%;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement6 span {
+  background: url("../img2/clouds/board-birds.png") 0 0% no-repeat;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement7 {
+  top: 68%;
+  left: 53%;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement7 span {
+  background: url("../img2/clouds/board-cloud-2.png") 0 0% no-repeat;
+  animation: swing2 2.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement8 {
+  top: 46%;
+  left: 80%;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope .parallaxElement8 span {
+  background: url("../img2/clouds/board-cloud-3.png") 0 0% no-repeat;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope img {
+  width: 100%;
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope1 {
+  top: 5%;
+  transform: scale(1);
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope1 .parallaxElement {
+  transform: scale(0.6);
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope2 {
+  top: -1.66667%;
+  transform: scale(1.05556);
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope2 .parallaxElement {
+  transform: scale(0.75556);
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope3 {
+  top: -11.66667%;
+  transform: scale(1.13889);
+}
+.wrapper .page .parallax .parallaxList li .parallaxRope3 .parallaxElement {
+  transform: scale(0.98889);
+}
+.wrapper .page .parallax .parallaxList li .parallaxGrass {
+  position: absolute;
+  left: -100%;
+  width: 300%;
+  opacity: 0;
+}
+.wrapper .page .parallax .parallaxList li .parallaxGrass1 {
+  bottom: 180px;
+  height: 86px;
+  animation: wave 7.11s 0.1s infinite linear;
+  background: url("../img/трава1-min.png") 0 0 / auto 101% repeat-x;
+}
+.wrapper .page .parallax .parallaxList li .parallaxGrass2 {
+  bottom: 144px;
+  height: 115px;
+  animation: wave 6.66s 0.1s infinite linear;
+  background: url("../img/трава2-min.png") 0 0 / auto 101% repeat-x;
+}
+.wrapper .page .parallax .parallaxList li .parallaxGrass3 {
+  bottom: 108px;
+  height: 144px;
+  animation: wave 6.22s 0.1s infinite linear;
+  background: url("../img/трава1-min.png") 0 0 / auto 101% repeat-x;
+}
+.wrapper .page .parallax .parallaxList li .parallaxGrass4 {
+  bottom: 72px;
+  height: 173px;
+  animation: wave 5.77s 0.1s infinite linear;
+  background: url("../img/трава2-min.png") 0 0 / auto 101% repeat-x;
+}
+.wrapper .page .parallax .parallaxList li .parallaxGrass5 {
+  bottom: -1px;
+  height: 230px;
+  animation: wave 4.88s 0.1s infinite linear;
+  background: url("../img/трава2-min.png") 0 0 / auto 101% repeat-x;
+}
+.wrapper .page .parallax .parallaxList li .parallaxGrass6 {
+  bottom: -72px;
+  height: 288px;
+  animation: wave 4.5s 0.1s infinite linear;
+  background: url("../img/трава2-min.png") 0 0 / auto 101% repeat-x;
+}
+.wrapper .page .parallax .parallaxList li .parallaxPointer {
+  background: url("../img/указатель1-min.png") 0 0 no-repeat;
+  width: 320px;
+  height: 560px;
+  position: absolute;
+  right: 8%;
+  bottom: -100%;
+  animation: lighthouse 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.wrapper .page .parallax .parallaxList li .parallaxBtn {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  right: 15%;
+  opacity: 0;
+  animation: btn 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.wrapper .page .parallax .parallaxList li .parallaxBall1 {
+  background: url("../img/4-1-min.png") 0 0 no-repeat;
+  width: 300px;
+  height: 600px;
+  position: absolute;
+  left: 25%;
+  bottom: -100%;
+  animation: ball1 3.5s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.wrapper .page .parallax .parallaxList li .parallaxBall2 {
+  background: url("../img/0-min.png") 0 0 no-repeat;
+  width: 300px;
+  height: 600px;
+  position: absolute;
+  left: 40%;
+  transform: rotate(40deg);
+  bottom: -110%;
+  animation: ball2 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.wrapper .page .parallax .parallaxList li .parallaxBall3 {
+  background: url("../img/4-2-min.png") 0 0 no-repeat;
+  width: 300px;
+  height: 600px;
+  position: absolute;
+  left: 55%;
+  bottom: -100%;
+  animation: ball3 3s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.wrapper .page .parallax .parallaxList li .parallaxWood2 {
+  background: url("../img/дерево1-min.png") 0 0 no-repeat;
+  width: 300px;
+  height: 1000px;
+  position: absolute;
+  left: -100%;
+  bottom: -50px;
+  opacity: 0;
+  animation: wood 5s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.wrapper .page .parallax .parallaxList li .parallaxWood1 {
+  background: url("../img/дерево2-min.png") 0 0 no-repeat;
+  width: 300px;
+  height: 1000px;
+  position: absolute;
+  right: -100%;
+  bottom: 100px;
+  opacity: 0;
+  animation: wood 5s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.wrapper .page .parallax .parallaxList li .parallaxLetter1 {
+  background: url("../img/f.png") 0 0 no-repeat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 25%;
+  bottom: 110px;
+  opacity: 0;
+}
+.wrapper .page .parallax .parallaxList li .parallaxLetter2 {
+  background: url("../img/u.png") 0 0 no-repeat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 30%;
+  bottom: 110px;
+  opacity: 0;
+}
+.wrapper .page .parallax .parallaxList li .parallaxLetter3 {
+  background: url("../img/r.png") 0 0 no-repeat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 35%;
+  bottom: 110px;
+  opacity: 0;
+}
+.wrapper .page .parallax .parallaxList li .parallaxLetter4 {
+  background: url("../img/n.png") 0 0 no-repeat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 40%;
+  bottom: 110px;
+  opacity: 0;
+}
+.wrapper .page .parallax .parallaxList li .parallaxLetter5 {
+  background: url("../img/i.png") 0 0 no-repeat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 45%;
+  bottom: 110px;
+  opacity: 0;
+}
+.wrapper .page .parallax .parallaxList li .parallaxLetter6 {
+  background: url("../img/t.png") 0 0 no-repeat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: 110px;
+  opacity: 0;
+}
+.wrapper .page .parallax .parallaxList li .parallaxLetter7 {
+  background: url("../img/u.png") 0 0 no-repeat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 55%;
+  bottom: 110px;
+  opacity: 0;
+}
+.wrapper .page .parallax .parallaxList li .parallaxLetter8 {
+  background: url("../img/r.png") 0 0 no-repeat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 60%;
+  bottom: 110px;
+  opacity: 0;
+}
+.wrapper .page .parallax .parallaxList li .parallaxLetter9 {
+  background: url("../img/e.png") 0 0 no-repeat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 65%;
+  bottom: 110px;
+  opacity: 0;
+}
+.wrapper .page .parallax::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000000 60%);
+}
+@keyframes swing {
+  0% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(-10deg);
+  }
+}
+@keyframes swing2 {
+  0% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(10deg);
+  }
+}
+@keyframes wave {
+  0% {
+    transform: rotateZ(0deg) translate3d(0, 5%, 0) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg) translate3d(0, 5%, 0) rotateZ(-360deg);
+  }
+}
+@keyframes lighthouse {
+  0% {
+    transform: translate3d(3%, 0, 0) rotateZ(1deg);
+  }
+  100% {
+    transform: translate3d(-3%, 0, 0) rotateZ(-1deg);
+  }
+}
+@keyframes btn {
+  0% {
+    transform: translate3d(12%, 0, 0) rotateZ(1deg);
+  }
+  100% {
+    transform: translate3d(-12%, 0, 0) rotateZ(-1deg);
+  }
+}
+@keyframes ball1 {
+  0% {
+    transform: translate3d(-5%, 0, 0) rotateZ(-2deg);
+  }
+  100% {
+    transform: translate3d(5%, 0, 0) rotateZ(2deg);
+  }
+}
+@keyframes ball2 {
+  0% {
+    transform: translate3d(10%, 0, 0) rotateZ(2deg);
+  }
+  100% {
+    transform: translate3d(-10%, 0, 0) rotateZ(-2deg);
+  }
+}
+@keyframes ball3 {
+  0% {
+    transform: translate3d(-7%, 0, 0) rotateZ(-2deg);
+  }
+  100% {
+    transform: translate3d(7%, 0, 0) rotateZ(2deg);
+  }
+}
+@keyframes wood {
+  0% {
+    transform: rotateZ(-1deg);
+  }
+  100% {
+    transform: rotateZ(1deg);
+  }
+}

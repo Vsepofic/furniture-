@@ -1,0 +1,44 @@
+.branch .branchRow .branchCol .branchCard {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.branch .branchRow .branchCol .branchCard .branchTitle {
+  flex: 1 1 auto;
+}
+.parent .parentRow .parentCol table #parent11 tr {
+  display: none;
+  border-bottom: 1px solid #c8c8c8;
+}
+.quarantee .quarBorder {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.quarantee .quarBorder .quarBody .quarBox {
+  width: 75%;
+}
+.quarantee .quarBorder .quarBody .quarBox .quarCircle {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+.quarantee .quarBorder .quarBody .quarBox .quarCircle .quarCircle1 {
+  position: absolute;
+  width: 1%;
+  height: 60%;
+  top: 15%;
+  left: 47%;
+  border: 2px solid red;
+}
+.quarantee .quarBorder .quarBody .quarBox .quarCircle .quarCircle2 {
+  position: absolute;
+  top: 80%;
+  left: 47%;
+  border: 2px solid red;
+}
+.quarantee .quarBorder:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}

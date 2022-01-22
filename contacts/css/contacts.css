@@ -1,0 +1,204 @@
+.contacts .contactsRow .contactsCol {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.contacts .contactsRow .contactsCol .contactsImg .contImg img {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+.contacts .contactsRow .contactsCol .contactsImg .contText {
+  position: relative;
+}
+.contacts .contactsRow .contactsCol .contactsImg .contText a {
+  color: #191919;
+}
+.contacts .contactsRow .contactsCol .contactsImg .contText span {
+  position: relative;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+.contacts .contactsRow .contactsCol .contactsImg .contText span:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  background-color: #191919;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
+}
+.contacts .contactsRow .contactsCol .contactsImg .contText :hover {
+  color: #7d7d7d;
+}
+.contacts .contactsRow .contactsCol .contactsImg .contText :hover span:after {
+  left: 0;
+  width: 100%;
+  background-color: #7d7d7d;
+}
+.contacts .contactsRow .contactsCol .contents.contentsLight .btn {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+.contacts .contactsRow .contactsCol .contents.contentsLight .btn:active {
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+.contacts .contactsRow .contactsCol .contents.contentsLight .btn::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: auto;
+  background: #000;
+  visibility: hidden;
+  opacity: 0;
+}
+.contacts .contactsRow .contactsCol .contents.contentsLight .btn:hover::before {
+  animation: sword 0.6s;
+}
+@keyframes sword {
+  0% {
+    top: -100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    top: 100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.contacts .contactsRow .contactsCol .contents.contentsLight .btn a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+.contacts .contactsRow .contactsCol .contents.contentsLight .btn a::before,
+.contacts .contactsRow .contactsCol .contents.contentsLight .btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 35px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transition: all 0.5s 0s;
+}
+.contacts .contactsRow .contactsCol .contents.contentsLight .btn a::before {
+  left: 0;
+  border-left: 1px solid #000;
+  border-radius: 5px 0 0 5px;
+}
+.contacts .contactsRow .contactsCol .contents.contentsLight .btn a::after {
+  right: 0;
+  border-right: 1px solid #000;
+  border-radius: 0 5px 5px 0;
+}
+.contacts .contactsRow .contactsCol .contents.contentsLight .btn a:hover::before {
+  left: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.contacts .contactsRow .contactsCol .contents.contentsLight .btn a:hover::after {
+  right: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.contacts .contactsRow .contactsCol .contents.contentsDark .btn {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+.contacts .contactsRow .contactsCol .contents.contentsDark .btn:active {
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+.contacts .contactsRow .contactsCol .contents.contentsDark .btn::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: auto;
+  background: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+}
+.contacts .contactsRow .contactsCol .contents.contentsDark .btn:hover::before {
+  animation: sword 0.6s;
+}
+@keyframes sword {
+  0% {
+    top: -100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    top: 100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.contacts .contactsRow .contactsCol .contents.contentsDark .btn a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+.contacts .contactsRow .contactsCol .contents.contentsDark .btn a::before,
+.contacts .contactsRow .contactsCol .contents.contentsDark .btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 35px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  transition: all 0.5s 0s;
+}
+.contacts .contactsRow .contactsCol .contents.contentsDark .btn a::before {
+  left: 0;
+  border-left: 1px solid #ffffff;
+  border-radius: 5px 0 0 5px;
+}
+.contacts .contactsRow .contactsCol .contents.contentsDark .btn a::after {
+  right: 0;
+  border-right: 1px solid #ffffff;
+  border-radius: 0 5px 5px 0;
+}
+.contacts .contactsRow .contactsCol .contents.contentsDark .btn a:hover::before {
+  left: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.contacts .contactsRow .contactsCol .contents.contentsDark .btn a:hover::after {
+  right: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.detailsOrg .orgInfo {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
