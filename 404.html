@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>фурнитура - мебель для вас</title>
+  <link rel="icon" href="../img/furnitureIcons/favicon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/furniture.css">
+  <link rel="stylesheet" href="error/css/error.css">
+</head>
+
+<body>
+  <div id="theme" class="container-fluid">
+
+    <div class="wrapper">
+
+      <div class="menuNavbar sticky-top mb-1 mb-md-3 px-0 pb-2 textN">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="navbarBox container-fluid">
+            <a class="navbar-brand text-uppercase" href="index.html">furniture</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="disabled nav-link dropdown-toggle text-uppercase langNavLink" href="#" id="navbarDropdown1" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Kаталог мебели
+                  </a>
+                  <ul class="dropdown-menu ulDark" aria-labelledby="navbarDropdown1">
+                    <li><a class="dropdown-item langKitchens" href="kitchen/kitchen.html" target="_blanc">Кухни</a></li>
+                    <li><a class="dropdown-item langWardrobes" href="#" target="_blanc">Шкафы-купе</a></li>
+                    <li><a class="dropdown-item langBathroom" href="#" target="_blanc">Мебель для ванной</a></li>
+                    <li><a class="dropdown-item langHallways" href="#" target="_blanc">Прихожие</a></li>
+                    <li><a class="dropdown-item langChildren" href="#" target="_blanc">Детская мебель</a></li>
+                    <li><a class="dropdown-item langShelving" href="#" target="_blanc">Гардеробные / стеллажные</a></li>
+                    <li><a class="dropdown-item langLiving" href="#" target="_blanc">Мебель для гостиной</a></li>
+                    <li><a class="dropdown-item langShelves" href="#" target="_blanc">Полки / Ниши</a></li>
+                    <li><a class="dropdown-item langCabinets" href="#" target="_blanc">Кабинеты и Библиотеки</a></li>
+                    <li><a class="dropdown-item langInterior" href="#" target="_blanc">Межкомнатные перегородки</a></li>
+                    <li><a class="dropdown-item langBedroom" href="#" target="_blanc">Мебель для спальной</a></li>
+                    <li><a class="dropdown-item langSolid" href="#" target="_blanc">Мебель из массива</a></li>
+                    <li><a class="dropdown-item langOffice" href="#" target="_blanc">Офисная мебель</a></li>
+                    <li><a class="dropdown-item langSoft" href="#" target="_blanc">Мебель с мягкими декорами</a></li>
+                    <li><a class="dropdown-item langLoft" href="#" target="_blanc">Мебель Лофт</a></li>
+                    <li><a class="dropdown-item langFolding" href="#" target="_blanc">Системы складных дверей</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="disabled nav-link dropdown-toggle text-uppercase langAbout" href="#" id="navbarDropdown2" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    О НАС
+                  </a>
+                  <ul class="dropdown-menu ulDark" aria-labelledby="navbarDropdown2">
+                    <li><a class="dropdown-item text-uppercase langAbout" href="#" target="_blanc">О НАС</a></li>
+                    <li><a class="dropdown-item text-uppercase langGuarantee" href="#" target="_blanc">ГАРАНТИЯ</a></li>
+                    <li><a class="dropdown-item text-uppercase langFavorites" href="#" target="_blanc">ИЗБРАННОЕ</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-uppercase langDesigners" href="designers/designer.html"
+                        target="_blanc">ДИЗАЙНЕРЫ</a>
+                    </li>
+                    <li class="nav-item dropdown2">
+                      <a class="disabled dropdown-item text-uppercase langWorks" role="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown2" href="#">
+                        РАБОТЫ НАШИХ ДИЗАЙНЕРОВ
+                      </a>
+                      <ul class="dropdown-menu2 ulDark" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item2 text-dark langStyleLoft" href="portfolio/portfolio-loft.html"
+                            target="_blanc">Стиль ЛОФТ</a></li>
+                        <li><a class="dropdown-item2 text-dark langStyleProv" href="portfolio/portfolio-prov.html"
+                            target="_blanc">Стиль ПРОВАНС</a></li>
+                        <li><a class="dropdown-item2 text-dark langStyleClass" href="portfolio/portfolio-class.html"
+                            target="_blanc">Стиль КЛАССИКА</a>
+                        </li>
+                        <li><a class="dropdown-item2 text-dark langStyleMini" href="portfolio/portfolio-mini.html"
+                            target="_blanc">Стиль МИНИМАЛИЗМ</a>
+                        </li>
+                        <li><a class="dropdown-item2 text-dark langStyleEtno" href="portfolio/portfolio-etno.html"
+                            target="_blanc">Стиль ЭТНО</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="disabled nav-link dropdown-toggle text-uppercase langHealthy" href="#" id="navbarDropdown3" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    ПОЛЕЗНО
+                  </a>
+                  <ul class="dropdown-menu ulDark" aria-labelledby="navbarDropdown3">
+                    <li><a class="dropdown-item text-uppercase langConsultation" href="#"
+                        target="_blanc">КОНСУЛЬТАЦИЯ</a></li>
+                    <li><a class="dropdown-item text-uppercase langDelivery" href="delivery/delivery.html"
+                        target="_blanc">ДОСТАВКА</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li class="nav-item dropdown2">
+                      <a class="disabled dropdown-item text-uppercase langMaterials" role="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown2" href="#">
+                        МАТЕРИАЛЫ
+                      </a>
+                      <ul class="dropdown-menu2 ulDark" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item2 text-dark langChipboard" href="#">ДСП</a></li>
+                        <li><a class="dropdown-item2 text-dark langTree" href="#">Дерево</a></li>
+                        <li><a class="dropdown-item2 text-dark langGlass" href="#">Стекло</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-uppercase langCalculators" href="calc/calc.html"
+                        target="_blanc">КАЛЬКУЛЯТОРЫ</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase langContacts" aria-current="page" href="contacts/contacts.html"
+                    target="_blanc">КОНТАКТЫ</a>
+                </li>
+              </ul>
+      
+              <ul class="navbar-nav navbarTheme">
+                <li id="themeBtn1" class="nav-item me-2 mb-2 mb-lg-0">
+                  <a id="but1" class="disabled nav-link"><img src="img/furnitureIcons/2.2-min.png" alt=""></a>
+                </li>
+                <li id="themeBtn2" class="nav-item d-none mb-3 mb-lg-0">
+                  <a id="but2" class="disabled nav-link"><img src="img/furnitureIcons/1.2-min.png" alt=""></a>
+                </li>
+                <li class="nav-item me-2 mb-3 mb-lg-0 p-2">
+                  <select class="btn shadow btn-outline-secondary changeLang textN" aria-label="">
+                    <option value="ru" class="" selected>RU</option>
+                    <option value="en">EN</option>
+                    <option value="ua">UA</option>
+                  </select>
+                </li>
+              </ul>
+      
+              <!-- <ul class="navbar-nav navbarTheme">
+                <li id="themeBtn1" class="nav-item mb-2 mb-lg-0">
+                  <a id="but1" class="nav-link" href="#" target="_blanc">Темная тема</a>
+                </li>
+                <li id="themeBtn2" class="nav-item d-none mb-3 mb-lg-0">
+                  <a id="but2" class="nav-link" href="#" target="_blanc">Светлая тема</a>
+                </li>
+                <li class="nav-item me-2 mb-3 mb-lg-0">
+                  <select class="btn shadow btn-outline-secondary changeLang textN" aria-label="">
+                    <option value="ru" class="" selected>RU</option>
+                    <option value="en">EN</option>
+                    <option value="ua">UA</option>
+                  </select>
+                </li>
+              </ul> -->
+      
+              <form class="d-flex navForm">
+                <input disabled id="elastic" class="form-control" type="search" autocomplete="off" aria-label="Search"
+                  placeholder="Disabled input">
+                <!-- <button class="btn btn-outline-secondary" type="submit">Найти</button> -->
+                <div class="navElastic bg-light">
+      
+                  <div class="elastic elasticHome">
+                    <a href="#theme">
+                      <p class="hide">Карусель фото</p>
+                    </a>
+                    <a href="#service">
+                      <p class="hide">Комплекс услуг</p>
+                    </a>
+                    <a href="#steps">
+                      <p class="hide">5 шагов</p>
+                    </a>
+                    <a href="#menuImg">
+                      <p class="hide">Мебель на заказ</p>
+                    </a>
+                    <a href="#timeCost">
+                      <p class="hide">Сроки и Стоимость</p>
+                    </a>
+                    <a href="#measurers">
+                      <p class="hide">Замерщики</p>
+                    </a>
+                    <a href="#designers">
+                      <p class="hide">Нюансы помещения</p>
+                    </a>
+                    <a href="#designersCard">
+                      <p class="hide">Наши дизайнеры</p>
+                    </a>
+                    <a href="#drawing">
+                      <p class="hide">Дизайн-проект</p>
+                    </a>
+                    <a href="#masters">
+                      <p class="hide">Лучшие материалы</p>
+                    </a>
+                    <a href="#catalog">
+                      <p class="hide">Каталог материалов</p>
+                    </a>
+                    <a href="#commentsVideo">
+                      <p class="hide">Отзывы о нас</p>
+                    </a>
+                    <a href="#comments">
+                      <p class="hide">Коментарии</p>
+                    </a>
+                    <a href="#newMail">
+                      <p class="hide">Новая почта</p>
+                      <!-- <p class="hide">Доставка</p> -->
+                    </a>
+                    <a href="#specialist">
+                      <p class="hide">Консультация</p>
+                    </a>
+                    <a href="#contactMaps">
+                      <p class="hide">Наш шоу-рум</p>
+                    </a>
+                  </div>
+      
+                  <div class="elastic elasticLink">
+                    <a href="/catalog/kitchen.html" target="blank">
+                      <p class="hide">Кухни</p>
+                    </a>
+                    <a href="/kitchen-corner/kitchen-corner.html" target="blank">
+                      <p class="hide">Угловые кухни</p>
+                    </a>
+                    <a href="/healthy/designer.html" target="blank">
+                      <p class="hide">Дизайнеры</p>
+                    </a>
+                    <a href="/portfolio/portfolio-loft.html" target="blank">
+                      <p class="hide">Стиль Лофт</p>
+                    </a>
+                    <a href="/portfolio/portfolio-prov.html" target="blank">
+                      <p class="hide">Стиль Прованс</p>
+                    </a>
+                    <a href="/portfolio/portfolio-class.html" target="blank">
+                      <p class="hide">Стиль Классика</p>
+                    </a>
+                    <a href="/portfolio/portfolio-mini.html" target="blank">
+                      <p class="hide">Стиль Минимализм</p>
+                    </a>
+                    <a href="/portfolio/portfolio-etno.html" target="blank">
+                      <p class="hide">Стиль Этно</p>
+                    </a>
+                    <a href="/contacts/contacts.html" target="blank">
+                      <p class="hide">Контакты</p>
+                    </a>
+                    <a href="/delivery/delivery.html" target="blank">
+                      <p class="hide">Доставка</p>
+                    </a>
+                    <a href="/calc/calc.html" target="blank">
+                      <p class="hide">Калькуляторы</p>
+                    </a>
+                  </div>
+                </div>
+              </form>
+      
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+      <div class="page mb-3 mb-md-5 pb-2 textN container-fluid">
+      
+        <div class="parallax">
+          <ul class="parallaxList">
+            <li data-depth="0.10">
+              <div class="parallaxBg"></div>
+            </li>
+            <li data-depth="0.20">
+              <div class="parallaxWall"></div>
+            </li>
+            <li data-depth="0.15">
+              <div class="parallaxRope parallaxRope1">
+                <div class="parallaxElement parallaxElement1"><span></span></div>
+                <div class="parallaxElement parallaxElement3"><span></span></div>
+                <img src="error/img2/rope.png" alt="">
+              </div>
+            </li>
+            <li data-depth="0.30">
+              <div class="parallaxRope parallaxRope2">
+                <div class="parallaxElement parallaxElement2"><span></span></div>
+                <div class="parallaxElement parallaxElement4"><span></span></div>
+                <div class="parallaxElement parallaxElement5"><span></span></div>
+                <img src="error/img2/rope.png" alt="">
+              </div>
+            </li>
+            <li data-depth="0.60">
+              <div class="parallaxRope parallaxRope3">
+                <div class="parallaxElement parallaxElement6"><span></span></div>
+                <div class="parallaxElement parallaxElement7"><span></span></div>
+                <div class="parallaxElement parallaxElement8"><span></span></div>
+                <img src="error/img2/rope.png" alt="">
+              </div>
+            </li>
+      
+            <li data-depth="0.30">
+              <div class="parallaxGrass parallaxGrass1"></div>
+            </li>
+            <li data-depth="0.40">
+              <div class="parallaxGrass parallaxGrass2"></div>
+            </li>
+      
+            <li data-depth="0.35">
+              <div class="parallaxWood1"></div>
+            </li>
+            <li data-depth="0.35">
+              <div class="parallaxWood2"></div>
+            </li>
+      
+            <li data-depth="0.45">
+              <div class="parallaxBall parallaxBall1"></div>
+            </li>
+            <li data-depth="0.45">
+              <div class="parallaxBall parallaxBall2"></div>
+            </li>
+            <li data-depth="0.45">
+              <div class="parallaxBall parallaxBall3"></div>
+            </li>
+      
+            <li data-depth="0.50">
+              <div class="parallaxGrass parallaxGrass3"></div>
+            </li>
+      
+            <li data-depth="0.60">
+              <div class="parallaxPointer"></div>
+            </li>
+            <li data-depth="0.60">
+              <div class="parallaxGrass parallaxGrass4"></div>
+            </li>
+      
+            <li data-depth="0.70">
+              <div class="parallaxLetter1"></div>
+            </li>
+            <li data-depth="0.70">
+              <div class="parallaxLetter2"></div>
+            </li>
+            <li data-depth="0.70">
+              <div class="parallaxLetter3"></div>
+            </li>
+            <li data-depth="0.70">
+              <div class="parallaxLetter4"></div>
+            </li>
+            <li data-depth="0.70">
+              <div class="parallaxLetter5"></div>
+            </li>
+            <li data-depth="0.70">
+              <div class="parallaxLetter6"></div>
+            </li>
+            <li data-depth="0.70">
+              <div class="parallaxLetter7"></div>
+            </li>
+            <li data-depth="0.70">
+              <div class="parallaxLetter8"></div>
+            </li>
+            <li data-depth="0.70">
+              <div class="parallaxLetter9"></div>
+            </li>
+      
+      
+            <li data-depth="0.80">
+              <div class="parallaxGrass parallaxGrass5"></div>
+            </li>
+            <li data-depth="1.0">
+              <div class="parallaxGrass parallaxGrass6"></div>
+            </li>
+            <li data-depth="0.60">
+              <!-- <div class="parallaxBtn"> -->
+              <a href="#" onclick="close_window();return false;" type="button" class="parallaxBtn btn text-light textT langClose404">Закрыть</a>
+              <!-- </div> href="#" onclick="close_window();return false;" -->
+            </li>
+          </ul>
+        </div>
+      
+      </div>
+      
+      
+      <div class="preloaderBox container-fluid">
+        <div class="preloader">
+          <div class="preloaderImg">
+            <div class="battonFreedomBtn">
+              <p class="freedomBtn">
+                <span class="freedomBtnText shadow-black">
+                  <span>LOADING</span>
+                </span>
+              </p>
+              <p class="freedomBut"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+  <script type="text/javascript" src="error/js/jquery.parallax.js"></script>
+  <script type="text/javascript" src="js/language.js"></script>
+  <script type="text/javascript" src="js/furniture.js"></script>
+  <script type="text/javascript" src="error/js/error.js"></script>
+</body>
+
+</html>
