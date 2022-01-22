@@ -1,0 +1,512 @@
+.hideFilter {
+  display: none;
+  transition: all 1s linear;
+}
+@keyframes filterAnim {
+  
+}
+#nav2 li {
+  list-style-type: none;
+}
+.wrapper .quarantee .quarBorder {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .quarantee .quarBorder .quarBody .quarBox {
+  width: 75%;
+}
+.wrapper .quarantee .quarBorder .quarBody .quarBox .quarCircle {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+.wrapper .quarantee .quarBorder .quarBody .quarBox .quarCircle .quarCircle1 {
+  position: absolute;
+  width: 1%;
+  height: 60%;
+  top: 15%;
+  left: 47%;
+  border: 2px solid red;
+}
+.wrapper .quarantee .quarBorder .quarBody .quarBox .quarCircle .quarCircle2 {
+  position: absolute;
+  top: 80%;
+  left: 47%;
+  border: 2px solid red;
+}
+.wrapper .quarantee .quarBorder:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .technique .techBox .techCol .contents.contentsLight .btn {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+.wrapper .technique .techBox .techCol .contents.contentsLight .btn:active {
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+.wrapper .technique .techBox .techCol .contents.contentsLight .btn::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: auto;
+  background: #000;
+  visibility: hidden;
+  opacity: 0;
+}
+.wrapper .technique .techBox .techCol .contents.contentsLight .btn:hover::before {
+  animation: sword 0.6s;
+}
+@keyframes sword {
+  0% {
+    top: -100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    top: 100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.wrapper .technique .techBox .techCol .contents.contentsLight .btn a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+.wrapper .technique .techBox .techCol .contents.contentsLight .btn a::before,
+.wrapper .technique .techBox .techCol .contents.contentsLight .btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 35px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transition: all 0.5s 0s;
+}
+.wrapper .technique .techBox .techCol .contents.contentsLight .btn a::before {
+  left: 0;
+  border-left: 1px solid #000;
+  border-radius: 5px 0 0 5px;
+}
+.wrapper .technique .techBox .techCol .contents.contentsLight .btn a::after {
+  right: 0;
+  border-right: 1px solid #000;
+  border-radius: 0 5px 5px 0;
+}
+.wrapper .technique .techBox .techCol .contents.contentsLight .btn a:hover::before {
+  left: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .technique .techBox .techCol .contents.contentsLight .btn a:hover::after {
+  right: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .technique .techBox .techCol .contents.contentsDark .btn {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+.wrapper .technique .techBox .techCol .contents.contentsDark .btn:active {
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+.wrapper .technique .techBox .techCol .contents.contentsDark .btn::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: auto;
+  background: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+}
+.wrapper .technique .techBox .techCol .contents.contentsDark .btn:hover::before {
+  animation: sword 0.6s;
+}
+@keyframes sword {
+  0% {
+    top: -100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    top: 100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.wrapper .technique .techBox .techCol .contents.contentsDark .btn a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+.wrapper .technique .techBox .techCol .contents.contentsDark .btn a::before,
+.wrapper .technique .techBox .techCol .contents.contentsDark .btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 35px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  transition: all 0.5s 0s;
+}
+.wrapper .technique .techBox .techCol .contents.contentsDark .btn a::before {
+  left: 0;
+  border-left: 1px solid #ffffff;
+  border-radius: 5px 0 0 5px;
+}
+.wrapper .technique .techBox .techCol .contents.contentsDark .btn a::after {
+  right: 0;
+  border-right: 1px solid #ffffff;
+  border-radius: 0 5px 5px 0;
+}
+.wrapper .technique .techBox .techCol .contents.contentsDark .btn a:hover::before {
+  left: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .technique .techBox .techCol .contents.contentsDark .btn a:hover::after {
+  right: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .technique .techBox .texCarousel .texCarouselBox {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .technique .techBox .texCarousel .texCarouselBox .carouselBox .carouselImg {
+  height: 40vh;
+}
+.wrapper .technique .techBox .texCarousel .texCarouselBox .carouselBox .carouselImg img {
+  max-width: 100%;
+  width: auto\9;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
+}
+.wrapper .technique .techBox .texCarousel .texCarouselBox:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .worktops .worktopsRow .worktopsCarousel .workCarouselBox {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .worktops .worktopsRow .worktopsCarousel .workCarouselBox .carouselBox .carouselImg {
+  height: 40vh;
+}
+.wrapper .worktops .worktopsRow .worktopsCarousel .workCarouselBox .carouselBox .carouselImg img {
+  max-width: 100%;
+  width: auto\9;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
+}
+.wrapper .worktops .worktopsRow .worktopsCarousel .workCarouselBox:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .worktops .worktopsRow .worktopsCol .worktopsRow2 .worktopsCol2 {
+  min-height: 100%;
+}
+.wrapper .worktops .worktopsRow .worktopsCol .worktopsRow2 .worktopsCol2 .worktopsText {
+  flex: 1 1 auto;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 {
+  min-height: 100%;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsLight .btn {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsLight .btn:active {
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsLight .btn::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: auto;
+  background: #000;
+  visibility: hidden;
+  opacity: 0;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsLight .btn:hover::before {
+  animation: sword 0.6s;
+}
+@keyframes sword {
+  0% {
+    top: -100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    top: 100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsLight .btn a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsLight .btn a::before,
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsLight .btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 35px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transition: all 0.5s 0s;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsLight .btn a::before {
+  left: 0;
+  border-left: 1px solid #000;
+  border-radius: 5px 0 0 5px;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsLight .btn a::after {
+  right: 0;
+  border-right: 1px solid #000;
+  border-radius: 0 5px 5px 0;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsLight .btn a:hover::before {
+  left: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsLight .btn a:hover::after {
+  right: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsDark .btn {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsDark .btn:active {
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsDark .btn::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 80px;
+  margin: auto;
+  background: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsDark .btn:hover::before {
+  animation: sword 0.6s;
+}
+@keyframes sword {
+  0% {
+    top: -100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  20% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    top: 100px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsDark .btn a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsDark .btn a::before,
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsDark .btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 35px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  transition: all 0.5s 0s;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsDark .btn a::before {
+  left: 0;
+  border-left: 1px solid #ffffff;
+  border-radius: 5px 0 0 5px;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsDark .btn a::after {
+  right: 0;
+  border-right: 1px solid #ffffff;
+  border-radius: 0 5px 5px 0;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsDark .btn a:hover::before {
+  left: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .contents.contentsDark .btn a:hover::after {
+  right: -20px;
+  transition: all 0.5s 0.2s;
+  opacity: 0;
+}
+.wrapper .modern .modernRow .modernCol .modernRow2 .modernCol2 .modernText {
+  flex: 1 1 auto;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff0000, rgba(0, 0, 0, 0)) 1 100%;
+}
+.wrapper .modern .modernRow .modernCarousel .modernCarouselBox {
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.wrapper .modern .modernRow .modernCarousel .modernCarouselBox .carouselBox .carouselImg {
+  height: 40vh;
+}
+.wrapper .modern .modernRow .modernCarousel .modernCarouselBox .carouselBox .carouselImg img {
+  max-width: 100%;
+  width: auto\9;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
+}
+.wrapper .modern .modernRow .modernCarousel .modernCarouselBox:hover {
+  box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+@media only screen and (max-width: 1399px) {
+  .menuImg .btnRow .contents .btn {
+    width: 170px;
+    height: 35px;
+  }
+  .menuImg .btnRow .contents .btn a::before,
+  .menuImg .btnRow .contents .btn a::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 35px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .menuImg .btnRow .contents .btn {
+    width: 160px;
+    height: 35px;
+  }
+  .menuImg .btnRow .contents .btn a::before,
+  .menuImg .btnRow .contents .btn a::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 35px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .menuImg .btnRow .contents .btn {
+    width: 150px;
+    height: 32px;
+  }
+  .menuImg .btnRow .contents .btn a::before,
+  .menuImg .btnRow .contents .btn a::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 32px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .menuImg .btnRow .contents .btn {
+    width: 140px;
+    height: 30px;
+  }
+  .menuImg .btnRow .contents .btn a::before,
+  .menuImg .btnRow .contents .btn a::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 30px;
+  }
+  .quarantee .quarBorder .quarBody .quarBox {
+    width: 90%;
+  }
+  .quarantee .quarBorder .quarBody .quarBox .quarCircle {
+    width: 50px;
+    height: 50px;
+  }
+  .quarantee .quarBorder .quarBody .quarBox .quarCircle .quarCircle1 {
+    border: 1px solid red;
+  }
+  .quarantee .quarBorder .quarBody .quarBox .quarCircle .quarCircle2 {
+    border: 1px solid red;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .menuImg .btnRow .contents .btn {
+    width: 120px;
+    height: 30px;
+  }
+  .menuImg .btnRow .contents .btn a::before,
+  .menuImg .btnRow .contents .btn a::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 30px;
+  }
+}

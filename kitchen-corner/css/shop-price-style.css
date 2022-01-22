@@ -1,0 +1,411 @@
+@keyframes moveLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+@keyframes moveRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+@keyframes moveTop {
+  0% {
+    transform: translateY(-150%);
+    opacity: 0;
+  }
+}
+@keyframes moveBottom {
+  0% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+}
+@keyframes moveRotate {
+  0% {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+.price-text p {
+  letter-spacing: 3px;
+}
+.price-text-right {
+  font-size: 20px;
+  animation: moveRight 1s ease-out 0.3s backwards;
+  transition: 0.5s ease-in-out;
+}
+.price-text-left {
+  font-size: 20px;
+  animation: moveLeft 1s ease-out 0.3s backwards;
+  transition: 0.5s ease-in-out;
+}
+.price-text-top {
+  font-size: 20px;
+  animation: moveTop 1s ease-out 0.3s backwards;
+  transition: 0.5s ease-in-out;
+}
+.price-text-bottom {
+  font-size: 20px;
+  animation: moveBottom 1s ease-out 0.3s backwards;
+  transition: 0.5s ease-in-out;
+}
+.price-text-rotate {
+  font-size: 20px;
+  animation: moveRotate 1s ease-out 0.3s backwards;
+  transition: 0.5s ease-in-out;
+}
+@media screen and (max-width: 1024px) {
+  .price-text-right,
+  .price-text-left,
+  .price-text-top,
+  .price-text-bottom,
+  .price-text-rotate {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .price-text-right,
+  .price-text-left,
+  .price-text-top,
+  .price-text-bottom,
+  .price-text-rotate {
+    font-size: 10px;
+  }
+  .price-text p {
+    letter-spacing: 1px;
+  }
+  .none {
+    display: none;
+  }
+}
+/* ******************************************* */
+.block-mar-top {
+  margin-top: 50px;
+}
+/* ********************************************* */
+
+/* ************************************************** */
+@keyframes turning-1 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes turning-2 {
+  0% {
+    transform: scale(1.1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.cofee-beans-1 {
+  width: 5%;
+  animation: turning-1 5s ease-out 1s infinite alternate;
+}
+.cofee-beans-1 img {
+  width: 100%;
+}
+.cofee-beans-2 {
+  width: 5%;
+  animation: turning-2 5s ease-out 1s infinite alternate;
+}
+.cofee-beans-2 img {
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .cofee-beans-1 {
+    width: 7%;
+  }
+  .cofee-beans-2 {
+    width: 7%;
+  }
+}
+@media screen and (max-width: 736px) {
+  .cofee-beans-1 {
+    width: 9%;
+  }
+  .cofee-beans-2 {
+    width: 9%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .cofee-beans-1 {
+    width: 10%;
+  }
+  .cofee-beans-2 {
+    width: 10%;
+  }
+}
+/* ***************************************************** */
+
+/* view-port  ****************************************************** */
+
+.block-mar-top-1 {
+  margin-top: 109px;
+  position: relative;
+}
+.block-mar-top-2 {
+  margin-bottom: -16px;
+}
+.view-port-1 {
+  background-color: rgb(255, 255, 255);
+  height: 1px;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 109px;
+}
+.view-port-2 {
+  background-color: rgb(255, 255, 255);
+  height: 1px;
+  width: 100%;
+  overflow: hidden;
+}
+.cylon-1 {
+  background-color: rgb(255, 255, 255);
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,45484d+50,000000+100&0+0,1+50,0+100 */
+  background: -moz-linear-gradient(
+    left,
+    rgba(69, 72, 77, 0) 0%,
+    rgba(69, 72, 77, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(69, 72, 77, 0) 0%,
+    rgba(69, 72, 77, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(69, 72, 77, 0) 0%,
+    rgba(69, 72, 77, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0045484d', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+  color: rgb(255, 255, 255);
+  height: 100%;
+  width: 5%;
+
+  -webkit-animation: 4s linear 0s infinite alternate move_eye-1;
+  -moz-animation: 4s linear 0s infinite alternate move_eye-1;
+  -o-animation: 4s linear 0s infinite alternate move_eye-1;
+  animation: 4s linear 0s infinite alternate move_eye-1;
+}
+.cylon-2 {
+  background-color: rgb(255, 255, 255);
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,45484d+50,000000+100&0+0,1+50,0+100 */
+  background: -moz-linear-gradient(
+    left,
+    rgba(69, 72, 77, 0) 0%,
+    rgba(69, 72, 77, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(69, 72, 77, 0) 0%,
+    rgba(69, 72, 77, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(69, 72, 77, 0) 0%,
+    rgba(69, 72, 77, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0045484d', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+  color: rgb(255, 255, 255);
+  height: 100%;
+  width: 5%;
+
+  -webkit-animation: 4s linear 0s infinite alternate move_eye-2;
+  -moz-animation: 4s linear 0s infinite alternate move_eye-2;
+  -o-animation: 4s linear 0s infinite alternate move_eye-2;
+  animation: 4s linear 0s infinite alternate move_eye-2;
+}
+@-webkit-keyframes move_eye-1 {
+  from {
+    margin-left: -10%;
+  }
+  to {
+    margin-left: 110%;
+  }
+}
+@-moz-keyframes move_eye-1 {
+  from {
+    margin-left: -10%;
+  }
+  to {
+    margin-left: 110%;
+  }
+}
+@-o-keyframes move_eye-1 {
+  from {
+    margin-left: -10%;
+  }
+  to {
+    margin-left: 110%;
+  }
+}
+@keyframes move_eye-1 {
+  from {
+    margin-left: -10%;
+  }
+  to {
+    margin-left: 110%;
+  }
+}
+@-webkit-keyframes move_eye-2 {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: -10%;
+  }
+}
+@-moz-keyframes move_eye-2 {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: -10%;
+  }
+}
+@-o-keyframes move_eye-2 {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: -10%;
+  }
+}
+@keyframes move_eye-2 {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: -10%;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .view-port,
+  .view-port-1,
+  .view-port-2,
+  .view-port-3 {
+    display: none;
+  }
+}
+
+/* ******************************************************  view-port */
+@keyframes footer-arrow {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+.footer-arrow-position {
+  color: gray;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+}
+.footer-arrow {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 50%;
+  animation: footer-arrow 2s ease-out 1s infinite alternate;
+}
+.footer-arrow-1 {
+  margin-top: auto;
+  width: 15px;
+  height: 15px;
+  border-right: 2px solid gray;
+  border-bottom: 2px solid gray;
+  transform: rotate(225deg);
+}
+.footer-arrow-2 {
+  width: 20px;
+  height: 20px;
+  border-right: 3px solid gray;
+  border-bottom: 3px solid gray;
+  transform: rotate(225deg);
+}
+.footer-icons {
+  margin-top: 20%;
+  text-align: center;
+}
+.footer-icons img {
+  width: 20px;
+  height: 20px;
+  margin: 3% 1%;
+}
+@media screen and (max-width: 1024px) {
+  footer h4 {
+    font-size: 15px;
+  }
+  footer .brand a {
+    font-size: 15px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  footer a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 736px) {
+  .footer-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .footer-arrow-1 {
+    width: 10px;
+    height: 10px;
+  }
+  .footer-arrow-2 {
+    width: 15px;
+    height: 15px;
+  }
+  .shop-coffee-price {
+    font-size: 50px;
+  }
+  .price-small {
+    font-size: 20px;
+  }
+}
